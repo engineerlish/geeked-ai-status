@@ -1,0 +1,54 @@
+{
+  "providers": [
+    {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "kind": "anthropic",
+        "url": "https://api.anthropic.com/v1/models",
+        "key_env": "ANTHROPIC_API_KEY"
+      },
+      "status": {
+        "kind": "statuspage",
+        "url": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com"
+      }
+    },
+    {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "kind": "openai",
+        "url": "https://api.openai.com/v1/models",
+        "key_env": "OPENAI_API_KEY",
+        "exclude_prefixes": ["ft:"]
+      },
+      "status": {
+        "kind": "statuspage",
+        "url": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "incident_url": "https://status.openai.com/incidents/{id}"
+      }
+    },
+    {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "kind": "openai",
+        "url": "https://api.x.ai/v1/models",
+        "key_env": "XAI_API_KEY"
+      },
+      "status": {
+        "kind": "rss",
+        "url": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/engineerlish/geeked-ai-status/blob/main/schema.json",
+  "title": "geeked-ai-status snapshot",
+  "description": "One check of every configured AI provider: current models, service status, and what changed since the previous snapshot. Version 1.",
+  "type": "object",
+  "required": ["schema_version", "checked_at", "scheduled_for", "run", "providers", "changes"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "checked_at": {
+      "description": "When this snapshot was actually taken (UTC, second precision).",
+      "$ref": "#/$defs/timestamp"
+    },
+    "scheduled_for": {
+      "description": "The 30-minute slot this run was meant for (UTC). Equal to checked_at floored to the slot.",
+      "$ref": "#/$defs/timestamp"
+    },
+    "run": {
+      "type": "object",
+      "required": ["trigger", "late", "late_seconds", "missed_slots", "missed_count", "collector_version"],
+      "additionalProperties": false,
+      "properties": {
+        "trigger": { "enum": ["schedule", "workflow_dispatch", "local"] },
+        "run_id": { "type": ["string", "null"] },
+        "late": {
+          "description": "True when the run started more than 10 minutes after its slot.",
+          "type": "boolean"
+        },
+        "late_seconds": { "type": "integer", "minimum": 0 },
+        "missed_slots": {
+          "description": "Slots between the previous snapshot and this one that no run covered (at most 48 listed).",
+          "type": "array",
+          "items": { "$ref": "#/$defs/timestamp" }
+        },
+        "missed_count": { "type": "integer", "minimum": 0 },
+        "collector_version": { "type": "string" },
+        "validation_errors": {
+          "description": "Present only on a fallback snapshot written because the real one failed validation.",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "providers": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/provider" }
+    },
+    "changes": {
+      "type": "object",
+      "required": ["any", "summary", "providers"],
+      "additionalProperties": false,
+      "properties": {
+        "any": { "type": "boolean" },
+        "summary": { "type": "string" },
+        "previous_checked_at": { "type": ["string", "null"] },
+        "providers": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/providerChanges" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "overall": {
+      "enum": ["operational", "degraded", "partial_outage", "major_outage", "maintenance", "unknown"]
+    },
+    "provider": {
+      "type": "object",
+      "required": ["id", "name", "vendor", "geeked_provider", "models", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "vendor": { "type": "string" },
+        "geeked_provider": { "type": ["string", "null"] },
+        "models": {
+          "type": "object",
+          "required": ["state", "source", "error", "items"],
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "description": "ok: listed now. error: the call failed (items are the previous list, marked stale). unavailable: no API key is configured.",
+              "enum": ["ok", "error", "unavailable"]
+            },
+            "source": { "type": "string" },
+            "error": { "type": ["string", "null"] },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "display_name", "created_at", "first_seen"],
+                "additionalProperties": false,
+                "properties": {
+                  "id": { "type": "string" },
+                  "display_name": { "type": "string" },
+                  "created_at": { "type": ["string", "null"] },
+                  "first_seen": {
+                    "description": "Date (UTC) this model was first observed by this collector.",
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "stale": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "type": "object",
+          "required": ["state", "source", "error", "overall", "summary", "incidents", "affected_components"],
+          "additionalProperties": false,
+          "properties": {
+            "state": { "enum": ["ok", "error"] },
+            "source": { "type": "string" },
+            "page_url": { "type": ["string", "null"] },
+            "error": { "type": ["string", "null"] },
+            "overall": { "$ref": "#/$defs/overall" },
+            "summary": { "type": "string" },
+            "incidents": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "title", "status", "impact", "url", "started_at", "updated_at"],
+                "additionalProperties": false,
+                "properties": {
+                  "id": { "type": "string" },
+                  "title": { "type": "string" },
+                  "status": { "type": "string" },
+                  "impact": { "enum": ["none", "minor", "major", "critical", "maintenance", "unknown"] },
+                  "url": { "type": ["string", "null"] },
+                  "started_at": { "type": ["string", "null"] },
+                  "updated_at": { "type": ["string", "null"] }
+                }
+              }
+            },
+            "affected_components": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name", "status"],
+                "additionalProperties": false,
+                "properties": {
+                  "name": { "type": "string" },
+                  "status": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "providerChanges": {
+      "type": "object",
+      "required": ["models_added", "models_removed", "status_changed", "incidents_started", "incidents_resolved"],
+      "additionalProperties": false,
+      "properties": {
+        "models_added": { "type": "array", "items": { "type": "string" } },
+        "models_removed": { "type": "array", "items": { "type": "string" } },
+        "status_changed": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["from", "to"],
+              "additionalProperties": false,
+              "properties": {
+                "from": { "$ref": "#/$defs/overall" },
+                "to": { "$ref": "#/$defs/overall" }
+              }
+            }
+          ]
+        },
+        "incidents_started": { "type": "array", "items": { "$ref": "#/$defs/incidentRef" } },
+        "incidents_resolved": { "type": "array", "items": { "$ref": "#/$defs/incidentRef" } }
+      }
+    },
+    "incidentRef": {
+      "type": "object",
+      "required": ["id", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" }
+      }
+    }
+  }
+}
