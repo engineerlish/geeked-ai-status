@@ -1,0 +1,68 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'history/**'
+      - 'latest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Unit tests
+        run: python -W error::ResourceWarning -m unittest discover -s tests -t . -v
+
+      - name: Configuration and schema are well formed
+        run: |
+          python - <<'EOF'
+          import json
+          from collector.snapshot import load_config
+          from pathlib import Path
+          load_config(Path("providers.json"))
+          schema = json.load(open("schema.json", encoding="utf-8"))
+          assert schema["properties"]["schema_version"] == {"const": 1}
+          print("providers.json and schema.json are valid")
+          EOF
+
+      - name: Latest snapshot still validates (when one exists)
+        run: |
+          python - <<'EOF'
+          import json, pathlib, sys
+          from collector.schema import validate
+          path = pathlib.Path("latest.json")
+          if not path.exists():
+              print("no latest.json yet")
+              sys.exit(0)
+          errors = validate(json.loads(path.read_text(encoding="utf-8")))
+          print(*errors, sep="\n")
+          sys.exit(1 if errors else 0)
+          EOF
+
+      - name: Conventional Commit subjects (pull requests)
+        if: github.event_name == 'pull_request'
+        run: |
+          pattern='^(feat|fix|docs|chore|refactor|test|ci|build|perf)(\([a-z0-9-]+\))?!?: .+'
+          bad=0
+          for subject in $(git log --format=%H origin/${{ github.base_ref }}..HEAD); do
+            line=$(git log -1 --format=%s "$subject")
+            if ! echo "$line" | grep -Eq "$pattern"; then
+              echo "not a Conventional Commit: $line"
+              bad=1
+            fi
+          done
+          exit $bad

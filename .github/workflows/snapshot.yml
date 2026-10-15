@@ -1,0 +1,51 @@
+name: snapshot
+
+# Takes one snapshot of every configured provider's models and service status and commits it
+# to main, every run, whether or not anything changed. The history has no gaps by design.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run at a time; a run that is queued behind another waits rather than racing on `main`.
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Take the snapshot
+        env:
+          # Listing models consumes no tokens. A missing secret only marks that provider's
+          # models "unavailable"; its status is still recorded.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: python -m collector --message-file "$RUNNER_TEMP/commit-message.txt"
+
+      - name: Commit and push
+        run: |
+          # The author is the repository owner's account (noreply address with the numeric id),
+          # so the commits are linked to it and count toward its contribution graph.
+          git config user.name "engineerlish"
+          git config user.email "143038945+engineerlish@users.noreply.github.com"
+          git add latest.json history
+          git commit -F "$RUNNER_TEMP/commit-message.txt"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+          done
+          echo "could not push after three attempts" >&2
+          exit 1
