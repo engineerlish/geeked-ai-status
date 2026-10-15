@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-15T22:24:37Z",
+  "checked_at": "2026-10-15T22:25:03Z",
   "scheduled_for": "2026-10-15T22:00:00Z",
   "run": {
     "trigger": "workflow_dispatch",
-    "run_id": "38816892036",
+    "run_id": "38816940004",
     "late": false,
-    "late_seconds": 1477,
+    "late_seconds": 1503,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -96,8 +96,8 @@
   },
   "changes": {
     "any": false,
-    "summary": "first snapshot",
-    "previous_checked_at": null,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-15T22:24:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
