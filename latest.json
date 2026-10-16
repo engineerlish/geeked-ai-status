@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-16T11:02:56Z",
-  "scheduled_for": "2026-10-16T11:00:00Z",
+  "checked_at": "2026-10-16T11:34:39Z",
+  "scheduled_for": "2026-10-16T11:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "38891192581",
+    "run_id": "38894682086",
     "late": false,
-    "late_seconds": 176,
+    "late_seconds": 279,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-16T10:36:03Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-16T11:02:56Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,17 +94,9 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M4XNQX7C6RCBNGX9H711WFSG",
-            "title": "Delayed Costs data in the Compliance API"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
