@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-19T14:03:02Z",
-  "scheduled_for": "2026-10-19T14:00:00Z",
+  "checked_at": "2026-10-19T14:36:59Z",
+  "scheduled_for": "2026-10-19T14:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39265431475",
+    "run_id": "39270544262",
     "late": false,
-    "late_seconds": 182,
+    "late_seconds": 419,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,41 +50,10 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "degraded",
-        "summary": "Partial System Degradation",
-        "incidents": [
-          {
-            "id": "01M5A5S1ATN3QB2WCHQ3VDZC81",
-            "title": "File Download errors",
-            "status": "identified",
-            "impact": "minor",
-            "url": "https://status.openai.com/incidents/01M5A5S1ATN3QB2WCHQ3VDZC81",
-            "started_at": "2026-10-19T13:31:52Z",
-            "updated_at": "2026-10-19T13:31:52Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "Responses",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Images",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Files",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "File uploads",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Image Generation",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "xai": {
@@ -111,9 +80,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-19T13:39:38Z",
+    "any": true,
+    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-19T14:03:02Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -125,9 +94,17 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "01M5A5S1ATN3QB2WCHQ3VDZC81",
+            "title": "File Download errors"
+          }
+        ]
       },
       "xai": {
         "models_added": [],
