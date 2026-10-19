@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-19T13:39:38Z",
-  "scheduled_for": "2026-10-19T13:30:00Z",
+  "checked_at": "2026-10-19T14:03:02Z",
+  "scheduled_for": "2026-10-19T14:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39262022445",
+    "run_id": "39265431475",
     "late": false,
-    "late_seconds": 578,
+    "late_seconds": 182,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -111,9 +111,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-19T13:05:38Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-19T13:39:38Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -125,16 +125,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M5A5S1ATN3QB2WCHQ3VDZC81",
-            "title": "File Download errors"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
