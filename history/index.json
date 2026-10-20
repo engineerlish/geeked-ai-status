@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-20T08:03:20Z",
-  "snapshots_total": 208,
+  "updated_at": "2026-10-20T08:42:05Z",
+  "snapshots_total": 209,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -39,8 +39,8 @@
       "failed": 0
     },
     "2026-10-20": {
-      "snapshots": 16,
-      "late": 3,
+      "snapshots": 17,
+      "late": 4,
       "missed": 1,
       "changed": 0,
       "failed": 0
