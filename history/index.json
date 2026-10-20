@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-20T00:05:47Z",
-  "snapshots_total": 193,
+  "updated_at": "2026-10-20T01:03:34Z",
+  "snapshots_total": 194,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -39,9 +39,9 @@
       "failed": 0
     },
     "2026-10-20": {
-      "snapshots": 1,
+      "snapshots": 2,
       "late": 0,
-      "missed": 0,
+      "missed": 1,
       "changed": 0,
       "failed": 0
     }
@@ -88,6 +88,11 @@
       "slot": "2026-10-19T06:30:00Z",
       "noticed_at": "2026-10-19T07:03:52Z",
       "path": "history/2026/10/19/0703.json"
+    },
+    {
+      "slot": "2026-10-20T00:30:00Z",
+      "noticed_at": "2026-10-20T01:03:34Z",
+      "path": "history/2026/10/20/0103.json"
     }
   ]
 }
