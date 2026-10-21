@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-21T16:37:49Z",
-  "scheduled_for": "2026-10-21T16:30:00Z",
+  "checked_at": "2026-10-21T17:02:17Z",
+  "scheduled_for": "2026-10-21T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39636465669",
+    "run_id": "39640149708",
     "late": false,
-    "late_seconds": 469,
+    "late_seconds": 137,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -54,15 +54,6 @@
         "summary": "Partial System Degradation",
         "incidents": [
           {
-            "id": "01M5FHKHPQJMSHCE2B2WDPZW2N",
-            "title": "Elevated error rates for gpt-5.6-luna API requests",
-            "status": "monitoring",
-            "impact": "minor",
-            "url": "https://status.openai.com/incidents/01M5FHKHPQJMSHCE2B2WDPZW2N",
-            "started_at": "2026-10-21T15:34:47Z",
-            "updated_at": "2026-10-21T15:47:26Z"
-          },
-          {
             "id": "01M5FD63HHDRPQPM5YMQWJ5HTN",
             "title": "Elevated FedRAMP API error rates for Astra and Sol",
             "status": "identified",
@@ -72,16 +63,7 @@
             "updated_at": "2026-10-21T14:17:32Z"
           }
         ],
-        "affected_components": [
-          {
-            "name": "Chat Completions",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Responses",
-            "status": "degraded_performance"
-          }
-        ]
+        "affected_components": []
       }
     },
     "xai": {
@@ -108,9 +90,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-21T16:02:53Z",
+    "any": true,
+    "summary": "ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-21T16:37:49Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -124,7 +106,12 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "01M5FHKHPQJMSHCE2B2WDPZW2N",
+            "title": "Elevated error rates for gpt-5.6-luna API requests"
+          }
+        ]
       },
       "xai": {
         "models_added": [],

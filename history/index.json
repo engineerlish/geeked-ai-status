@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-21T16:37:49Z",
-  "snapshots_total": 272,
+  "updated_at": "2026-10-21T17:02:17Z",
+  "snapshots_total": 273,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -46,10 +46,10 @@
       "failed": 0
     },
     "2026-10-21": {
-      "snapshots": 33,
+      "snapshots": 34,
       "late": 6,
       "missed": 1,
-      "changed": 5,
+      "changed": 6,
       "failed": 0
     }
   },
@@ -93,6 +93,11 @@
       "checked_at": "2026-10-21T15:37:53Z",
       "path": "history/2026/10/21/1537.json",
       "summary": "ChatGPT: 1 new incident(s)"
+    },
+    {
+      "checked_at": "2026-10-21T17:02:17Z",
+      "path": "history/2026/10/21/1702.json",
+      "summary": "ChatGPT: 1 incident(s) resolved"
     }
   ],
   "missed": [
