@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-21T14:36:50Z",
-  "scheduled_for": "2026-10-21T14:30:00Z",
+  "checked_at": "2026-10-21T15:02:44Z",
+  "scheduled_for": "2026-10-21T15:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39618360912",
+    "run_id": "39622198702",
     "late": false,
-    "late_seconds": 410,
+    "late_seconds": 164,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,14 +50,14 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "partial_outage",
-        "summary": "Partial System Outage",
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
         "incidents": [
           {
             "id": "01M5FD63HHDRPQPM5YMQWJ5HTN",
             "title": "Elevated FedRAMP API error rates for Astra and Sol",
             "status": "identified",
-            "impact": "major",
+            "impact": "minor",
             "url": "https://status.openai.com/incidents/01M5FD63HHDRPQPM5YMQWJ5HTN",
             "started_at": "2026-10-21T14:17:32Z",
             "updated_at": "2026-10-21T14:17:32Z"
@@ -91,8 +91,8 @@
   },
   "changes": {
     "any": true,
-    "summary": "ChatGPT partial outage (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-21T14:02:53Z",
+    "summary": "ChatGPT degraded (was partial outage)",
+    "previous_checked_at": "2026-10-21T14:36:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -105,15 +105,10 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
+          "from": "partial_outage",
+          "to": "degraded"
         },
-        "incidents_started": [
-          {
-            "id": "01M5FD63HHDRPQPM5YMQWJ5HTN",
-            "title": "Elevated FedRAMP API error rates for Astra and Sol"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
