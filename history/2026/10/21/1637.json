@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-21T16:37:49Z",
+  "scheduled_for": "2026-10-21T16:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "39636465669",
+    "late": false,
+    "late_seconds": 469,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M5FHKHPQJMSHCE2B2WDPZW2N",
+            "title": "Elevated error rates for gpt-5.6-luna API requests",
+            "status": "monitoring",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5FHKHPQJMSHCE2B2WDPZW2N",
+            "started_at": "2026-10-21T15:34:47Z",
+            "updated_at": "2026-10-21T15:47:26Z"
+          },
+          {
+            "id": "01M5FD63HHDRPQPM5YMQWJ5HTN",
+            "title": "Elevated FedRAMP API error rates for Astra and Sol",
+            "status": "identified",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5FD63HHDRPQPM5YMQWJ5HTN",
+            "started_at": "2026-10-21T14:17:32Z",
+            "updated_at": "2026-10-21T14:17:32Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-21T16:02:53Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
