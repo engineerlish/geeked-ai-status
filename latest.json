@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-21T15:37:53Z",
-  "scheduled_for": "2026-10-21T15:30:00Z",
+  "checked_at": "2026-10-21T16:02:53Z",
+  "scheduled_for": "2026-10-21T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39627395223",
+    "run_id": "39631186564",
     "late": false,
-    "late_seconds": 473,
+    "late_seconds": 173,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M5FHKHPQJMSHCE2B2WDPZW2N",
             "title": "Elevated error rates for gpt-5.6-luna API requests",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M5FHKHPQJMSHCE2B2WDPZW2N",
             "started_at": "2026-10-21T15:34:47Z",
-            "updated_at": "2026-10-21T15:34:47Z"
+            "updated_at": "2026-10-21T15:47:26Z"
           },
           {
             "id": "01M5FD63HHDRPQPM5YMQWJ5HTN",
@@ -108,9 +108,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-21T15:02:44Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-21T15:37:53Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -123,12 +123,7 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "01M5FHKHPQJMSHCE2B2WDPZW2N",
-            "title": "Elevated error rates for gpt-5.6-luna API requests"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
