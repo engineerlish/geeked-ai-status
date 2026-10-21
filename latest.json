@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-21T02:05:36Z",
-  "scheduled_for": "2026-10-21T02:00:00Z",
+  "checked_at": "2026-10-21T02:41:55Z",
+  "scheduled_for": "2026-10-21T02:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39531057050",
-    "late": false,
-    "late_seconds": 336,
+    "run_id": "39534441757",
+    "late": true,
+    "late_seconds": 715,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,10 +50,121 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M5E4G39TD1BW1QWHZG6RFA5H",
+            "title": "Degraded performance in ChatGPT, Codex, and APIs",
+            "status": "monitoring",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5E4G39TD1BW1QWHZG6RFA5H",
+            "started_at": "2026-10-21T02:26:28Z",
+            "updated_at": "2026-10-21T02:27:42Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Agents",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Decisions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Fine-tuning",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Embeddings",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Images",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Batch",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Audio",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Moderations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Realtime",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Files",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Login",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Live",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Conversations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Login",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Codex in ChatGPT Desktop",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Compliance API",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Search",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "File uploads",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Voice mode",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "GPTs",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Image Generation",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Deep Research",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -80,9 +191,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-21T01:43:33Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-21T02:05:36Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,8 +205,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M5E4G39TD1BW1QWHZG6RFA5H",
+            "title": "Degraded performance in ChatGPT, Codex, and APIs"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {

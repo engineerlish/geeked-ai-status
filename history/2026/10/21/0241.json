@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-21T02:41:55Z",
+  "scheduled_for": "2026-10-21T02:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "39534441757",
+    "late": true,
+    "late_seconds": 715,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M5E4G39TD1BW1QWHZG6RFA5H",
+            "title": "Degraded performance in ChatGPT, Codex, and APIs",
+            "status": "monitoring",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5E4G39TD1BW1QWHZG6RFA5H",
+            "started_at": "2026-10-21T02:26:28Z",
+            "updated_at": "2026-10-21T02:27:42Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Agents",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Decisions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Fine-tuning",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Embeddings",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Images",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Batch",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Audio",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Moderations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Realtime",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Files",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Login",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Live",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Conversations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Login",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Codex in ChatGPT Desktop",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Compliance API",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Search",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "File uploads",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Voice mode",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "GPTs",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Image Generation",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Deep Research",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-21T02:05:36Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M5E4G39TD1BW1QWHZG6RFA5H",
+            "title": "Degraded performance in ChatGPT, Codex, and APIs"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
