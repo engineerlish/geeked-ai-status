@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T19:02:13Z",
-  "scheduled_for": "2026-10-22T19:00:00Z",
+  "checked_at": "2026-10-22T19:33:26Z",
+  "scheduled_for": "2026-10-22T19:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39836537694",
+    "run_id": "39841097438",
     "late": false,
-    "late_seconds": 133,
+    "late_seconds": 206,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-22T18:40:02Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-22T19:02:13Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,16 +104,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M5JF8DR3EGQJNTXPZ24AKX2G",
-            "title": "Degraded Performance of Dots on Enterprise"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
