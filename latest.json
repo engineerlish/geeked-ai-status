@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T03:39:57Z",
-  "scheduled_for": "2026-10-22T03:30:00Z",
+  "checked_at": "2026-10-22T04:02:49Z",
+  "scheduled_for": "2026-10-22T04:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39718073006",
+    "run_id": "39720158486",
     "late": false,
-    "late_seconds": 597,
+    "late_seconds": 169,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,10 +28,29 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partially Degraded Service",
+        "incidents": [
+          {
+            "id": "wj6r4t6mxq1r",
+            "title": "Elevated errors affecting Connectors",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://stspg.io/4dcr8c005yxc",
+            "started_at": "2026-10-22T03:50:12Z",
+            "updated_at": "2026-10-22T03:50:12Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "openai": {
@@ -99,15 +118,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-22T03:03:07Z",
+    "any": true,
+    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-10-22T03:39:57Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "wj6r4t6mxq1r",
+            "title": "Elevated errors affecting Connectors"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
