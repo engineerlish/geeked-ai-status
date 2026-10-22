@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T04:02:49Z",
-  "scheduled_for": "2026-10-22T04:00:00Z",
+  "checked_at": "2026-10-22T04:38:39Z",
+  "scheduled_for": "2026-10-22T04:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39720158486",
+    "run_id": "39723505217",
     "late": false,
-    "late_seconds": 169,
+    "late_seconds": 519,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -118,23 +118,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-10-22T03:39:57Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-22T04:02:49Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "wj6r4t6mxq1r",
-            "title": "Elevated errors affecting Connectors"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
