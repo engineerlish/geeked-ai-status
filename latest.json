@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T09:03:34Z",
-  "scheduled_for": "2026-10-22T09:00:00Z",
+  "checked_at": "2026-10-22T09:37:53Z",
+  "scheduled_for": "2026-10-22T09:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39752456421",
+    "run_id": "39756893411",
     "late": false,
-    "late_seconds": 214,
+    "late_seconds": 473,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-22T08:42:42Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-22T09:03:34Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,17 +94,9 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M5GPE9C4E19HE461P8JAMYXD",
-            "title": "ChatGPT conversion failures in India, Japan and Korea. And Response API errors"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
