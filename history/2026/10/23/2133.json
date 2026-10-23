@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23T21:33:37Z",
+  "scheduled_for": "2026-10-23T21:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "40027645294",
+    "late": false,
+    "late_seconds": 217,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [
+          {
+            "id": "01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "title": "Help Center Chat Support Degraded",
+            "status": "investigating",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "started_at": "2026-10-23T21:30:25Z",
+            "updated_at": "2026-10-23T21:30:25Z"
+          }
+        ],
+        "affected_components": []
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-23T21:02:30Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [
+          {
+            "id": "01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "title": "Help Center Chat Support Degraded"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}

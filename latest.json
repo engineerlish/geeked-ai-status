@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T21:02:30Z",
-  "scheduled_for": "2026-10-23T21:00:00Z",
+  "checked_at": "2026-10-23T21:33:37Z",
+  "scheduled_for": "2026-10-23T21:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40023795205",
+    "run_id": "40027645294",
     "late": false,
-    "late_seconds": 150,
+    "late_seconds": 217,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -52,7 +52,17 @@
         "error": null,
         "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [],
+        "incidents": [
+          {
+            "id": "01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "title": "Help Center Chat Support Degraded",
+            "status": "investigating",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "started_at": "2026-10-23T21:30:25Z",
+            "updated_at": "2026-10-23T21:30:25Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -80,9 +90,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-23T20:36:26Z",
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-23T21:02:30Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -95,7 +105,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M5NAR5GZC5M7D0S7AQ6CGEEN",
+            "title": "Help Center Chat Support Degraded"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
