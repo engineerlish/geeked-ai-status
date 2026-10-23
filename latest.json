@@ -1,16 +1,14 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T01:05:38Z",
-  "scheduled_for": "2026-10-23T01:00:00Z",
+  "checked_at": "2026-10-23T01:44:41Z",
+  "scheduled_for": "2026-10-23T01:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39882003032",
-    "late": false,
-    "late_seconds": 338,
-    "missed_slots": [
-      "2026-10-23T00:30:00Z"
-    ],
-    "missed_count": 1,
+    "run_id": "39885708724",
+    "late": true,
+    "late_seconds": 881,
+    "missed_slots": [],
+    "missed_count": 0,
     "collector_version": "1.0.0"
   },
   "providers": {
@@ -82,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-23T00:06:11Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-23T01:05:38Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -96,17 +94,9 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M5JHVJVC8WAXB4WRYFMKG6HP",
-            "title": "New Ad Accounts failing to provision admins"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
