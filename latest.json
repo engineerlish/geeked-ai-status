@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T08:03:20Z",
-  "scheduled_for": "2026-10-23T08:00:00Z",
+  "checked_at": "2026-10-23T08:41:32Z",
+  "scheduled_for": "2026-10-23T08:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39921937448",
-    "late": false,
-    "late_seconds": 200,
+    "run_id": "39926432772",
+    "late": true,
+    "late_seconds": 692,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -82,7 +82,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-10-23T07:40:32Z",
+    "previous_checked_at": "2026-10-23T08:03:20Z",
     "providers": {
       "anthropic": {
         "models_added": [],
