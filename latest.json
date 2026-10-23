@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T23:33:01Z",
-  "scheduled_for": "2026-10-22T23:30:00Z",
+  "checked_at": "2026-10-23T00:06:11Z",
+  "scheduled_for": "2026-10-23T00:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39872512691",
+    "run_id": "39876028057",
     "late": false,
-    "late_seconds": 181,
+    "late_seconds": 371,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M5JHVJVC8WAXB4WRYFMKG6HP",
             "title": "New Ad Accounts failing to provision admins",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M5JHVJVC8WAXB4WRYFMKG6HP",
             "started_at": "2026-10-22T19:36:53Z",
-            "updated_at": "2026-10-22T21:30:55Z"
+            "updated_at": "2026-10-22T23:45:37Z"
           }
         ],
         "affected_components": []
@@ -92,7 +92,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-10-22T23:02:14Z",
+    "previous_checked_at": "2026-10-22T23:33:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
