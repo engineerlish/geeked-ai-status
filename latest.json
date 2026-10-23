@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T06:03:54Z",
-  "scheduled_for": "2026-10-23T06:00:00Z",
+  "checked_at": "2026-10-23T06:50:59Z",
+  "scheduled_for": "2026-10-23T06:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39909252201",
-    "late": false,
-    "late_seconds": 234,
+    "run_id": "39914011466",
+    "late": true,
+    "late_seconds": 1259,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-23T05:36:49Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-23T06:03:54Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -96,12 +96,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M5KDJ4079XQTZDSRX40NMN6H",
-            "title": "Delays in customer support responses"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
