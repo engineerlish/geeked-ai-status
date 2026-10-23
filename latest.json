@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T04:39:13Z",
-  "scheduled_for": "2026-10-23T04:30:00Z",
+  "checked_at": "2026-10-23T05:02:30Z",
+  "scheduled_for": "2026-10-23T05:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "39901450578",
+    "run_id": "39903552033",
     "late": false,
-    "late_seconds": 553,
+    "late_seconds": 150,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M5KDJ4079XQTZDSRX40NMN6H",
             "title": "Delays in customer support responses",
-            "status": "investigating",
+            "status": "identified",
             "impact": "none",
             "url": "https://status.openai.com/incidents/01M5KDJ4079XQTZDSRX40NMN6H",
             "started_at": "2026-10-23T03:41:03Z",
-            "updated_at": "2026-10-23T03:57:09Z"
+            "updated_at": "2026-10-23T04:43:12Z"
           }
         ],
         "affected_components": []
@@ -92,7 +92,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-10-23T04:03:08Z",
+    "previous_checked_at": "2026-10-23T04:39:13Z",
     "providers": {
       "anthropic": {
         "models_added": [],
