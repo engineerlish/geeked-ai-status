@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-24T05:02:16Z",
-  "scheduled_for": "2026-10-24T05:00:00Z",
+  "checked_at": "2026-10-24T05:35:38Z",
+  "scheduled_for": "2026-10-24T05:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40064678088",
+    "run_id": "40066852689",
     "late": false,
-    "late_seconds": 136,
+    "late_seconds": 338,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,10 +28,33 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "partial_outage",
+        "summary": "Minor Service Outage",
+        "incidents": [
+          {
+            "id": "0ns5clsk8p2x",
+            "title": "Elevated errors for other Claude models",
+            "status": "identified",
+            "impact": "major",
+            "url": "https://stspg.io/7n1wgb6qsfly",
+            "started_at": "2026-10-24T05:16:50Z",
+            "updated_at": "2026-10-24T05:24:53Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "partial_outage"
+          }
+        ]
       }
     },
     "openai": {
@@ -80,15 +103,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-24T04:37:18Z",
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-10-24T05:02:16Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "0ns5clsk8p2x",
+            "title": "Elevated errors for other Claude models"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
