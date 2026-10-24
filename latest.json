@@ -1,14 +1,16 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-24T00:05:34Z",
-  "scheduled_for": "2026-10-24T00:00:00Z",
+  "checked_at": "2026-10-24T01:01:34Z",
+  "scheduled_for": "2026-10-24T01:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40043206454",
+    "run_id": "40047851849",
     "late": false,
-    "late_seconds": 334,
-    "missed_slots": [],
-    "missed_count": 0,
+    "late_seconds": 94,
+    "missed_slots": [
+      "2026-10-24T00:30:00Z"
+    ],
+    "missed_count": 1,
     "collector_version": "1.0.0"
   },
   "providers": {
@@ -28,37 +30,10 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "major_outage",
-        "summary": "Partially Degraded Service",
-        "incidents": [
-          {
-            "id": "h101vcmhnfky",
-            "title": "Elevated errors for Claude Fable 5.1, Sonnet 5.5, and Haiku 5.5",
-            "status": "monitoring",
-            "impact": "critical",
-            "url": "https://stspg.io/gqp288t3qzpt",
-            "started_at": "2026-10-23T23:37:42Z",
-            "updated_at": "2026-10-23T23:54:14Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude API (api.anthropic.com)",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Code",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Cowork",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "openai": {
@@ -108,38 +83,30 @@
   },
   "changes": {
     "any": true,
-    "summary": "Claude major outage (was operational); Claude: 1 new incident(s); ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-23T23:33:04Z",
+    "summary": "Claude operational (was major outage); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-24T00:05:34Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "major_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "h101vcmhnfky",
-            "title": "Elevated errors for Claude Fable 5.1, Sonnet 5.5, and Haiku 5.5"
-          }
-        ],
-        "incidents_resolved": []
-      },
-      "openai": {
-        "models_added": [],
-        "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
+          "from": "major_outage",
           "to": "operational"
         },
         "incidents_started": [],
         "incidents_resolved": [
           {
-            "id": "01M5NFF94XCJ6CGTD4S78A9BEB",
-            "title": "Degraded experience with ChatGPT app connections using CIMD"
+            "id": "h101vcmhnfky",
+            "title": "Elevated errors for Claude Fable 5.1, Sonnet 5.5, and Haiku 5.5"
           }
         ]
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
