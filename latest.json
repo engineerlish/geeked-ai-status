@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-25T07:35:31Z",
-  "scheduled_for": "2026-10-25T07:30:00Z",
+  "checked_at": "2026-10-25T08:02:54Z",
+  "scheduled_for": "2026-10-25T08:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40173341331",
+    "run_id": "40175087319",
     "late": false,
-    "late_seconds": 331,
+    "late_seconds": 174,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,19 +28,9 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "partial_outage",
+        "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [
-          {
-            "id": "334jvgbrc4ff",
-            "title": "Elevated errors for Claude Sonnet 5.5 and other models",
-            "status": "monitoring",
-            "impact": "major",
-            "url": "https://stspg.io/s3wd6gmdsdhn",
-            "started_at": "2026-10-25T06:14:18Z",
-            "updated_at": "2026-10-25T06:35:59Z"
-          }
-        ],
+        "incidents": [],
         "affected_components": []
       }
     },
@@ -90,16 +80,24 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-25T07:04:25Z",
+    "any": true,
+    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-25T07:35:31Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "partial_outage",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "334jvgbrc4ff",
+            "title": "Elevated errors for Claude Sonnet 5.5 and other models"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
