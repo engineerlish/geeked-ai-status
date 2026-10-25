@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-25T06:03:32Z",
-  "snapshots_total": 439,
+  "updated_at": "2026-10-25T06:46:54Z",
+  "snapshots_total": 440,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -74,10 +74,10 @@
       "failed": 0
     },
     "2026-10-25": {
-      "snapshots": 12,
-      "late": 3,
+      "snapshots": 13,
+      "late": 4,
       "missed": 1,
-      "changed": 0,
+      "changed": 1,
       "failed": 0
     }
   },
@@ -221,6 +221,11 @@
       "checked_at": "2026-10-24T06:03:54Z",
       "path": "history/2026/10/24/0603.json",
       "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved"
+    },
+    {
+      "checked_at": "2026-10-25T06:46:54Z",
+      "path": "history/2026/10/25/0646.json",
+      "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)"
     }
   ],
   "missed": [
