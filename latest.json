@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-26T22:02:53Z",
-  "scheduled_for": "2026-10-26T22:00:00Z",
+  "checked_at": "2026-10-26T22:36:47Z",
+  "scheduled_for": "2026-10-26T22:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40409345946",
+    "run_id": "40413757879",
     "late": false,
-    "late_seconds": 173,
+    "late_seconds": 407,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -117,9 +117,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-26T21:36:11Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-26T22:02:53Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -138,16 +138,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_67a789782eda77b3",
-            "title": "[Cursor IDE (Desktop)] Degraded codebase indexing and agent personalization"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
