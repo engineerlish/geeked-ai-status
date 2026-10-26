@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-26T21:36:11Z",
-  "snapshots_total": 512,
+  "updated_at": "2026-10-26T22:02:53Z",
+  "snapshots_total": 513,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -81,10 +81,10 @@
       "failed": 0
     },
     "2026-10-26": {
-      "snapshots": 38,
+      "snapshots": 39,
       "late": 11,
       "missed": 6,
-      "changed": 0,
+      "changed": 1,
       "failed": 0
     }
   },
@@ -248,6 +248,11 @@
       "checked_at": "2026-10-25T09:02:35Z",
       "path": "history/2026/10/25/0902.json",
       "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved"
+    },
+    {
+      "checked_at": "2026-10-26T22:02:53Z",
+      "path": "history/2026/10/26/2202.json",
+      "summary": "Grok degraded (was operational); Grok: 1 new incident(s)"
     }
   ],
   "missed": [

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-26T21:36:11Z",
-  "scheduled_for": "2026-10-26T21:30:00Z",
+  "checked_at": "2026-10-26T22:02:53Z",
+  "scheduled_for": "2026-10-26T22:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40405722846",
+    "run_id": "40409345946",
     "late": false,
-    "late_seconds": 371,
+    "late_seconds": 173,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,54 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "4 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_67a789782eda77b3",
+            "title": "[Automations] Degraded codebase indexing and agent personalization",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_67a789782eda77b3",
+            "started_at": "2026-10-26T22:02:31Z",
+            "updated_at": "2026-10-26T22:02:31Z"
+          },
+          {
+            "id": "ps_67a789782eda77b3",
+            "title": "[Cloud Agents] Degraded codebase indexing and agent personalization",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_67a789782eda77b3",
+            "started_at": "2026-10-26T22:02:31Z",
+            "updated_at": "2026-10-26T22:02:31Z"
+          },
+          {
+            "id": "ps_67a789782eda77b3",
+            "title": "[CLI] Degraded codebase indexing and agent personalization",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-cli/ps_67a789782eda77b3",
+            "started_at": "2026-10-26T22:02:31Z",
+            "updated_at": "2026-10-26T22:02:31Z"
+          },
+          {
+            "id": "ps_67a789782eda77b3",
+            "title": "[Cursor IDE (Desktop)] Degraded codebase indexing and agent personalization",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_67a789782eda77b3",
+            "started_at": "2026-10-26T22:02:31Z",
+            "updated_at": "2026-10-26T22:02:31Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-26T21:01:58Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-10-26T21:36:11Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +138,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_67a789782eda77b3",
+            "title": "[Cursor IDE (Desktop)] Degraded codebase indexing and agent personalization"
+          }
+        ],
         "incidents_resolved": []
       }
     }
