@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T07:42:43Z",
-  "scheduled_for": "2026-10-27T07:30:00Z",
+  "checked_at": "2026-10-27T08:03:21Z",
+  "scheduled_for": "2026-10-27T08:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40468748324",
-    "late": true,
-    "late_seconds": 763,
+    "run_id": "40470900336",
+    "late": false,
+    "late_seconds": 201,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -52,7 +52,17 @@
         "error": null,
         "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [],
+        "incidents": [
+          {
+            "id": "01M5Y60NQGGN514EB3943V94EN",
+            "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
+            "status": "investigating",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M5Y60NQGGN514EB3943V94EN",
+            "started_at": "2026-10-27T08:00:50Z",
+            "updated_at": "2026-10-27T08:00:50Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -127,8 +137,8 @@
   },
   "changes": {
     "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-27T07:10:59Z",
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-27T07:42:43Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -141,22 +151,19 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M5Y60NQGGN514EB3943V94EN",
+            "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[Review Agents] Elevated errors affecting repository integrations"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
