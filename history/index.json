@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-27T13:40:29Z",
-  "snapshots_total": 543,
+  "updated_at": "2026-10-27T14:03:37Z",
+  "snapshots_total": 544,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -88,10 +88,10 @@
       "failed": 0
     },
     "2026-10-27": {
-      "snapshots": 27,
+      "snapshots": 28,
       "late": 9,
       "missed": 1,
-      "changed": 6,
+      "changed": 7,
       "failed": 0
     }
   },
@@ -290,6 +290,11 @@
       "checked_at": "2026-10-27T10:03:02Z",
       "path": "history/2026/10/27/1003.json",
       "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved"
+    },
+    {
+      "checked_at": "2026-10-27T14:03:37Z",
+      "path": "history/2026/10/27/1403.json",
+      "summary": "ChatGPT: 1 incident(s) resolved"
     }
   ],
   "missed": [
