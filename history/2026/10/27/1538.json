@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-27T15:38:17Z",
+  "scheduled_for": "2026-10-27T15:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "40532932166",
+    "late": false,
+    "late_seconds": 497,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "partial_outage",
+        "summary": "Minor Service Outage",
+        "incidents": [
+          {
+            "id": "lqhknfdjrcst",
+            "title": "Elevated errors for Claude Sonnet 5.5",
+            "status": "identified",
+            "impact": "major",
+            "url": "https://stspg.io/39x7qh3sd7bd",
+            "started_at": "2026-10-27T15:09:08Z",
+            "updated_at": "2026-10-27T15:09:09Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude API (api.anthropic.com)",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "partial_outage"
+          }
+        ]
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M5YY4A3TQETEQ53DVSK8SW10",
+            "title": "6.1 Sol Degraded Model Performance",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5YY4A3TQETEQ53DVSK8SW10",
+            "started_at": "2026-10-27T15:02:15Z",
+            "updated_at": "2026-10-27T15:02:15Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Batch",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-10-27T15:03:44Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "lqhknfdjrcst",
+            "title": "Elevated errors for Claude Sonnet 5.5"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
