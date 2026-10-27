@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T14:03:37Z",
-  "scheduled_for": "2026-10-27T14:00:00Z",
+  "checked_at": "2026-10-27T14:40:57Z",
+  "scheduled_for": "2026-10-27T14:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40517530602",
-    "late": false,
-    "late_seconds": 217,
+    "run_id": "40523434180",
+    "late": true,
+    "late_seconds": 657,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-27T13:40:29Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-27T14:03:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -96,12 +96,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M5Y60NQGGN514EB3943V94EN",
-            "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
