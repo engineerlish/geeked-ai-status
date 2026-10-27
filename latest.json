@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T14:40:57Z",
-  "scheduled_for": "2026-10-27T14:30:00Z",
+  "checked_at": "2026-10-27T15:03:44Z",
+  "scheduled_for": "2026-10-27T15:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40523434180",
-    "late": true,
-    "late_seconds": 657,
+    "run_id": "40527202918",
+    "late": false,
+    "late_seconds": 224,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,10 +50,33 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M5YY4A3TQETEQ53DVSK8SW10",
+            "title": "6.1 Sol Degraded Model Performance",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M5YY4A3TQETEQ53DVSK8SW10",
+            "started_at": "2026-10-27T15:02:15Z",
+            "updated_at": "2026-10-27T15:02:15Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Batch",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -80,9 +103,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-27T14:03:37Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-27T14:40:57Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,8 +117,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M5YY4A3TQETEQ53DVSK8SW10",
+            "title": "6.1 Sol Degraded Model Performance"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
