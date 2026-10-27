@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T01:47:37Z",
-  "scheduled_for": "2026-10-27T01:30:00Z",
+  "checked_at": "2026-10-27T02:07:41Z",
+  "scheduled_for": "2026-10-27T02:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40434651147",
-    "late": true,
-    "late_seconds": 1057,
+    "run_id": "40436609940",
+    "late": false,
+    "late_seconds": 461,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-27T01:06:59Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-27T01:47:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,17 +101,9 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_67a789782eda77b3",
-            "title": "[Cursor IDE (Desktop)] Degraded agent personalization and codebase sync"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
