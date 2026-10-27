@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T09:04:07Z",
-  "scheduled_for": "2026-10-27T09:00:00Z",
+  "checked_at": "2026-10-27T09:39:37Z",
+  "scheduled_for": "2026-10-27T09:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40477977822",
+    "run_id": "40482445995",
     "late": false,
-    "late_seconds": 247,
+    "late_seconds": 577,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,9 +28,19 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
+        "overall": "partial_outage",
         "summary": "All Systems Operational",
-        "incidents": [],
+        "incidents": [
+          {
+            "id": "0q89dylg9vjk",
+            "title": "Elevated errors for Claude Sonnet 5.5",
+            "status": "monitoring",
+            "impact": "major",
+            "url": "https://stspg.io/rql9h590npxd",
+            "started_at": "2026-10-27T09:14:35Z",
+            "updated_at": "2026-10-27T09:38:11Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -90,15 +100,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-27T08:43:40Z",
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-10-27T09:04:07Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "0q89dylg9vjk",
+            "title": "Elevated errors for Claude Sonnet 5.5"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
