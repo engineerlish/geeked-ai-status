@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T08:03:21Z",
-  "scheduled_for": "2026-10-27T08:00:00Z",
+  "checked_at": "2026-10-27T08:43:40Z",
+  "scheduled_for": "2026-10-27T08:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40470900336",
-    "late": false,
-    "late_seconds": 201,
+    "run_id": "40475506204",
+    "late": true,
+    "late_seconds": 820,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M5Y60NQGGN514EB3943V94EN",
             "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
-            "status": "investigating",
+            "status": "monitoring",
             "impact": "none",
             "url": "https://status.openai.com/incidents/01M5Y60NQGGN514EB3943V94EN",
             "started_at": "2026-10-27T08:00:50Z",
-            "updated_at": "2026-10-27T08:00:50Z"
+            "updated_at": "2026-10-27T08:21:10Z"
           }
         ],
         "affected_components": []
@@ -82,63 +82,17 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "5 active incident(s)",
-        "incidents": [
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[Automations] Elevated errors affecting repository integrations",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/automations/ps_7e6bd6bbd3e53c30",
-            "started_at": "2026-10-27T07:33:08Z",
-            "updated_at": "2026-10-27T07:33:08Z"
-          },
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[BugBot] Elevated errors affecting repository integrations",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/bugbot/ps_7e6bd6bbd3e53c30",
-            "started_at": "2026-10-27T07:33:08Z",
-            "updated_at": "2026-10-27T07:33:08Z"
-          },
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[Cloud Agents] Elevated errors affecting repository integrations",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/cloud-agents/ps_7e6bd6bbd3e53c30",
-            "started_at": "2026-10-27T07:33:08Z",
-            "updated_at": "2026-10-27T07:33:08Z"
-          },
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[Origin] Elevated errors affecting repository integrations",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/origin/ps_7e6bd6bbd3e53c30",
-            "started_at": "2026-10-27T07:33:08Z",
-            "updated_at": "2026-10-27T07:33:08Z"
-          },
-          {
-            "id": "ps_7e6bd6bbd3e53c30",
-            "title": "[Review Agents] Elevated errors affecting repository integrations",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/review-agents/ps_7e6bd6bbd3e53c30",
-            "started_at": "2026-10-27T07:33:08Z",
-            "updated_at": "2026-10-27T07:33:08Z"
-          }
-        ],
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
         "affected_components": []
       }
     }
   },
   "changes": {
     "any": true,
-    "summary": "ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-27T07:42:43Z",
+    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-27T08:03:21Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -151,20 +105,23 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "01M5Y60NQGGN514EB3943V94EN",
-            "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "ps_7e6bd6bbd3e53c30",
+            "title": "[Review Agents] Elevated errors affecting repository integrations"
+          }
+        ]
       }
     }
   }
