@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T09:39:37Z",
-  "scheduled_for": "2026-10-27T09:30:00Z",
+  "checked_at": "2026-10-27T10:03:02Z",
+  "scheduled_for": "2026-10-27T10:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40482445995",
+    "run_id": "40485448165",
     "late": false,
-    "late_seconds": 577,
+    "late_seconds": 182,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,19 +28,9 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "partial_outage",
+        "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [
-          {
-            "id": "0q89dylg9vjk",
-            "title": "Elevated errors for Claude Sonnet 5.5",
-            "status": "monitoring",
-            "impact": "major",
-            "url": "https://stspg.io/rql9h590npxd",
-            "started_at": "2026-10-27T09:14:35Z",
-            "updated_at": "2026-10-27T09:38:11Z"
-          }
-        ],
+        "incidents": [],
         "affected_components": []
       }
     },
@@ -101,23 +91,23 @@
   },
   "changes": {
     "any": true,
-    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-10-27T09:04:07Z",
+    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-27T09:39:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
+          "from": "partial_outage",
+          "to": "operational"
         },
-        "incidents_started": [
+        "incidents_started": [],
+        "incidents_resolved": [
           {
             "id": "0q89dylg9vjk",
             "title": "Elevated errors for Claude Sonnet 5.5"
           }
-        ],
-        "incidents_resolved": []
+        ]
       },
       "openai": {
         "models_added": [],
