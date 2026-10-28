@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T19:31:41Z",
-  "scheduled_for": "2026-10-28T19:30:00Z",
+  "checked_at": "2026-10-28T20:02:38Z",
+  "scheduled_for": "2026-10-28T20:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40755076926",
+    "run_id": "40759637577",
     "late": false,
-    "late_seconds": 101,
+    "late_seconds": 158,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -34,11 +34,11 @@
           {
             "id": "phg1y2yh07n2",
             "title": "Elevated errors affecting the Google Calendar connector",
-            "status": "investigating",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://stspg.io/75qq31h8672d",
             "started_at": "2026-10-28T16:19:09Z",
-            "updated_at": "2026-10-28T17:59:30Z"
+            "updated_at": "2026-10-28T19:47:31Z"
           }
         ],
         "affected_components": [
@@ -105,7 +105,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-10-28T19:01:59Z",
+    "previous_checked_at": "2026-10-28T19:31:41Z",
     "providers": {
       "anthropic": {
         "models_added": [],
