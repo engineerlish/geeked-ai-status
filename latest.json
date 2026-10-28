@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T20:02:38Z",
-  "scheduled_for": "2026-10-28T20:00:00Z",
+  "checked_at": "2026-10-28T20:31:46Z",
+  "scheduled_for": "2026-10-28T20:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40759637577",
+    "run_id": "40764075298",
     "late": false,
-    "late_seconds": 158,
+    "late_seconds": 106,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,33 +28,10 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "degraded",
-        "summary": "Partially Degraded Service",
-        "incidents": [
-          {
-            "id": "phg1y2yh07n2",
-            "title": "Elevated errors affecting the Google Calendar connector",
-            "status": "monitoring",
-            "impact": "minor",
-            "url": "https://stspg.io/75qq31h8672d",
-            "started_at": "2026-10-28T16:19:09Z",
-            "updated_at": "2026-10-28T19:47:31Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Code",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Cowork",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "openai": {
@@ -103,16 +80,24 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-28T19:31:41Z",
+    "any": true,
+    "summary": "Claude operational (was degraded); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-28T20:02:38Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "phg1y2yh07n2",
+            "title": "Elevated errors affecting the Google Calendar connector"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
