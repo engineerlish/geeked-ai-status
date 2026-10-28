@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T16:32:05Z",
-  "scheduled_for": "2026-10-28T16:30:00Z",
+  "checked_at": "2026-10-28T17:02:08Z",
+  "scheduled_for": "2026-10-28T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40726879449",
+    "run_id": "40731778318",
     "late": false,
-    "late_seconds": 125,
+    "late_seconds": 128,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -103,23 +103,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-10-28T16:02:20Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-28T16:32:05Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "phg1y2yh07n2",
-            "title": "Elevated errors affecting the Google Calendar connector"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
