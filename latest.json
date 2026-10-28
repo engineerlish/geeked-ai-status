@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T03:33:06Z",
-  "scheduled_for": "2026-10-28T03:30:00Z",
+  "checked_at": "2026-10-28T04:02:18Z",
+  "scheduled_for": "2026-10-28T04:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40627317148",
+    "run_id": "40630018248",
     "late": false,
-    "late_seconds": 186,
+    "late_seconds": 138,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,10 +28,33 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partially Degraded Service",
+        "incidents": [
+          {
+            "id": "9ftx658xtd5z",
+            "title": "Elevated errors affecting the Gmail connector",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://stspg.io/j86c100s8tqm",
+            "started_at": "2026-10-28T03:59:32Z",
+            "updated_at": "2026-10-28T04:00:18Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude Code",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "openai": {
@@ -50,10 +73,25 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M609FPNJF29J5GDH979ZDYYK",
+            "title": "Degraded Performace on ChatGPT Work",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M609FPNJF29J5GDH979ZDYYK",
+            "started_at": "2026-10-28T03:39:58Z",
+            "updated_at": "2026-10-28T03:39:58Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -80,22 +118,38 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-28T03:02:15Z",
+    "any": true,
+    "summary": "Claude degraded (was operational); Claude: 1 new incident(s); ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-28T03:33:06Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "9ftx658xtd5z",
+            "title": "Elevated errors affecting the Gmail connector"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M609FPNJF29J5GDH979ZDYYK",
+            "title": "Degraded Performace on ChatGPT Work"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
