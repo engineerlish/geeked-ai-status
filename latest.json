@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T04:02:18Z",
-  "scheduled_for": "2026-10-28T04:00:00Z",
+  "checked_at": "2026-10-28T04:32:28Z",
+  "scheduled_for": "2026-10-28T04:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40630018248",
+    "run_id": "40632887569",
     "late": false,
-    "late_seconds": 138,
+    "late_seconds": 148,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -38,7 +38,7 @@
             "impact": "minor",
             "url": "https://stspg.io/j86c100s8tqm",
             "started_at": "2026-10-28T03:59:32Z",
-            "updated_at": "2026-10-28T04:00:18Z"
+            "updated_at": "2026-10-28T04:06:55Z"
           }
         ],
         "affected_components": [
@@ -73,25 +73,10 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "degraded",
-        "summary": "Partial System Degradation",
-        "incidents": [
-          {
-            "id": "01M609FPNJF29J5GDH979ZDYYK",
-            "title": "Degraded Performace on ChatGPT Work",
-            "status": "investigating",
-            "impact": "minor",
-            "url": "https://status.openai.com/incidents/01M609FPNJF29J5GDH979ZDYYK",
-            "started_at": "2026-10-28T03:39:58Z",
-            "updated_at": "2026-10-28T03:39:58Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "ChatGPT Work",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "xai": {
@@ -119,38 +104,30 @@
   },
   "changes": {
     "any": true,
-    "summary": "Claude degraded (was operational); Claude: 1 new incident(s); ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-28T03:33:06Z",
+    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-28T04:02:18Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "9ftx658xtd5z",
-            "title": "Elevated errors affecting the Gmail connector"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "degraded"
+          "from": "degraded",
+          "to": "operational"
         },
-        "incidents_started": [
+        "incidents_started": [],
+        "incidents_resolved": [
           {
             "id": "01M609FPNJF29J5GDH979ZDYYK",
             "title": "Degraded Performace on ChatGPT Work"
           }
-        ],
-        "incidents_resolved": []
+        ]
       },
       "xai": {
         "models_added": [],
