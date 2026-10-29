@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29T09:02:23Z",
+  "scheduled_for": "2026-10-29T09:00:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "40846498682",
+    "late": false,
+    "late_seconds": 143,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "degraded",
+        "summary": "6 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Automations] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          },
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[BugBot] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/bugbot/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          },
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Cloud Agents] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          },
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Grok Bot] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          },
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Origin] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/origin/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          },
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Review Agents] Degraded performance — Origin and Cloud Agents",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/review-agents/ps_95a4f0b2be913452",
+            "started_at": "2026-10-29T09:01:50Z",
+            "updated_at": "2026-10-29T09:01:50Z"
+          }
+        ],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-10-29T08:33:49Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_95a4f0b2be913452",
+            "title": "[Review Agents] Degraded performance — Origin and Cloud Agents"
+          }
+        ],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
