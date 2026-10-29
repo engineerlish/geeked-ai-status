@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-29T21:31:51Z",
-  "scheduled_for": "2026-10-29T21:30:00Z",
+  "checked_at": "2026-10-29T22:02:02Z",
+  "scheduled_for": "2026-10-29T22:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40958546831",
+    "run_id": "40962643446",
     "late": false,
-    "late_seconds": 111,
+    "late_seconds": 122,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_ad31c985bfc193b9",
+            "title": "[Cursor IDE (Desktop)] Investigating Service Degradation with VS Code Extensions",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_ad31c985bfc193b9",
+            "started_at": "2026-10-29T21:38:10Z",
+            "updated_at": "2026-10-29T21:38:10Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-29T21:02:10Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-10-29T21:31:51Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +111,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_ad31c985bfc193b9",
+            "title": "[Cursor IDE (Desktop)] Investigating Service Degradation with VS Code Extensions"
+          }
+        ],
         "incidents_resolved": []
       }
     }
