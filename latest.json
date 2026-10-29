@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-29T22:02:02Z",
-  "scheduled_for": "2026-10-29T22:00:00Z",
+  "checked_at": "2026-10-29T22:31:42Z",
+  "scheduled_for": "2026-10-29T22:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40962643446",
+    "run_id": "40966530203",
     "late": false,
-    "late_seconds": 122,
+    "late_seconds": 102,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-29T21:31:51Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-29T22:02:02Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -111,16 +111,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_ad31c985bfc193b9",
-            "title": "[Cursor IDE (Desktop)] Investigating Service Degradation with VS Code Extensions"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
