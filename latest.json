@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-29T23:02:09Z",
-  "scheduled_for": "2026-10-29T23:00:00Z",
+  "checked_at": "2026-10-29T23:31:49Z",
+  "scheduled_for": "2026-10-29T23:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40970257847",
+    "run_id": "40973748548",
     "late": false,
-    "late_seconds": 129,
+    "late_seconds": 109,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,8 +73,35 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "summary": "4 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Automations] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Cloud Agents] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Cursor IDE (Desktop)] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
           {
             "id": "ps_ad31c985bfc193b9",
             "title": "[Cursor IDE (Desktop)] Investigating Service Degradation with VS Code Extensions",
@@ -90,9 +117,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-29T22:31:42Z",
+    "any": true,
+    "summary": "Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-10-29T23:02:09Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -112,7 +139,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Cursor IDE (Desktop)] Cloud Agent Degradation"
+          }
+        ],
         "incidents_resolved": []
       }
     }
