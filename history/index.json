@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-10-30T02:33:44Z",
-  "snapshots_total": 665,
+  "updated_at": "2026-10-30T03:02:26Z",
+  "snapshots_total": 666,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -109,10 +109,10 @@
       "failed": 0
     },
     "2026-10-30": {
-      "snapshots": 6,
+      "snapshots": 7,
       "late": 1,
       "missed": 0,
-      "changed": 3,
+      "changed": 4,
       "failed": 0
     }
   },
@@ -406,6 +406,11 @@
       "checked_at": "2026-10-30T02:03:08Z",
       "path": "history/2026/10/30/0203.json",
       "summary": "Grok: 1 new incident(s)"
+    },
+    {
+      "checked_at": "2026-10-30T03:02:26Z",
+      "path": "history/2026/10/30/0302.json",
+      "summary": "Grok: 1 incident(s) resolved"
     }
   ],
   "missed": [
