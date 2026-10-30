@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T19:31:48Z",
-  "scheduled_for": "2026-10-30T19:30:00Z",
+  "checked_at": "2026-10-30T20:02:03Z",
+  "scheduled_for": "2026-10-30T20:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41115973415",
+    "run_id": "41120038856",
     "late": false,
-    "late_seconds": 108,
+    "late_seconds": 123,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,10 +50,25 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M6754SR14HCQ3E9FX426E2N7",
+            "title": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M6754SR14HCQ3E9FX426E2N7",
+            "started_at": "2026-10-30T19:38:47Z",
+            "updated_at": "2026-10-30T19:38:47Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -80,9 +95,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-30T19:01:43Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-30T19:31:48Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,8 +109,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M6754SR14HCQ3E9FX426E2N7",
+            "title": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {

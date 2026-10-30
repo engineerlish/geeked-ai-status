@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-30T20:02:03Z",
+  "scheduled_for": "2026-10-30T20:00:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "41120038856",
+    "late": false,
+    "late_seconds": 123,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M6754SR14HCQ3E9FX426E2N7",
+            "title": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M6754SR14HCQ3E9FX426E2N7",
+            "started_at": "2026-10-30T19:38:47Z",
+            "updated_at": "2026-10-30T19:38:47Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-30T19:31:48Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M6754SR14HCQ3E9FX426E2N7",
+            "title": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
