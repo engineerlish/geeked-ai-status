@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T15:02:07Z",
-  "scheduled_for": "2026-10-30T15:00:00Z",
+  "checked_at": "2026-10-30T15:31:41Z",
+  "scheduled_for": "2026-10-30T15:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41076932363",
+    "run_id": "41081511861",
     "late": false,
-    "late_seconds": 127,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -95,9 +95,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-10-30T14:31:56Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-30T15:02:07Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -109,16 +109,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M66KSDH67V5BQ73PE8AD2W8S",
-            "title": "Elevated errors for GPT Image 2 API image edits"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
