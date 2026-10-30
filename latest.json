@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T14:31:56Z",
-  "scheduled_for": "2026-10-30T14:30:00Z",
+  "checked_at": "2026-10-30T15:02:07Z",
+  "scheduled_for": "2026-10-30T15:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41072344703",
+    "run_id": "41076932363",
     "late": false,
-    "late_seconds": 116,
+    "late_seconds": 127,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,10 +50,25 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M66KSDH67V5BQ73PE8AD2W8S",
+            "title": "Elevated errors for GPT Image 2 API image edits",
+            "status": "identified",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M66KSDH67V5BQ73PE8AD2W8S",
+            "started_at": "2026-10-30T14:35:28Z",
+            "updated_at": "2026-10-30T14:35:28Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Images",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -80,9 +95,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-30T14:02:18Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-10-30T14:31:56Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,8 +109,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M66KSDH67V5BQ73PE8AD2W8S",
+            "title": "Elevated errors for GPT Image 2 API image edits"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
