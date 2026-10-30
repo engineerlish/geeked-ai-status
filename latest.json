@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T00:05:06Z",
-  "scheduled_for": "2026-10-30T00:00:00Z",
+  "checked_at": "2026-10-30T00:52:07Z",
+  "scheduled_for": "2026-10-30T00:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40977378485",
-    "late": false,
-    "late_seconds": 306,
+    "run_id": "40982350393",
+    "late": true,
+    "late_seconds": 1327,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -126,9 +126,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-29T23:31:49Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-30T00:05:06Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -148,12 +148,7 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "ps_e5eb22a9954466c4",
-            "title": "[Grok Bot] Auto Review Degradation"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
