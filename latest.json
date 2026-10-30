@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T16:02:04Z",
-  "scheduled_for": "2026-10-30T16:00:00Z",
+  "checked_at": "2026-10-30T16:31:42Z",
+  "scheduled_for": "2026-10-30T16:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41086137440",
+    "run_id": "41090691881",
     "late": false,
-    "late_seconds": 124,
+    "late_seconds": 102,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M66KSDH67V5BQ73PE8AD2W8S",
             "title": "Elevated errors for GPT Image 2 API image edits",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M66KSDH67V5BQ73PE8AD2W8S",
             "started_at": "2026-10-30T14:35:28Z",
-            "updated_at": "2026-10-30T14:35:28Z"
+            "updated_at": "2026-10-30T16:06:34Z"
           }
         ],
         "affected_components": [
@@ -97,7 +97,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-10-30T15:31:41Z",
+    "previous_checked_at": "2026-10-30T16:02:04Z",
     "providers": {
       "anthropic": {
         "models_added": [],
