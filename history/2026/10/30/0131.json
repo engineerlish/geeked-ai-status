@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-30T01:31:51Z",
+  "scheduled_for": "2026-10-30T01:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "40986386308",
+    "late": false,
+    "late_seconds": 111,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "degraded",
+        "summary": "4 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Automations] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Cloud Agents] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
+          {
+            "id": "ps_35b661ea1cde5cbc",
+            "title": "[Cursor IDE (Desktop)] Cloud Agent Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_35b661ea1cde5cbc",
+            "started_at": "2026-10-29T23:29:27Z",
+            "updated_at": "2026-10-29T23:29:27Z"
+          },
+          {
+            "id": "ps_ad31c985bfc193b9",
+            "title": "[Cursor IDE (Desktop)] Investigating Service Degradation with VS Code Extensions",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_ad31c985bfc193b9",
+            "started_at": "2026-10-29T21:38:10Z",
+            "updated_at": "2026-10-29T21:38:10Z"
+          }
+        ],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-10-30T01:03:49Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": [
+          {
+            "id": "ps_e5eb22a9954466c4",
+            "title": "[Grok Bot] Auto Review Degradation"
+          }
+        ]
+      }
+    }
+  }
+}
