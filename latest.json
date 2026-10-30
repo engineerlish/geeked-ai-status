@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T03:02:26Z",
-  "scheduled_for": "2026-10-30T03:00:00Z",
+  "checked_at": "2026-10-30T03:32:54Z",
+  "scheduled_for": "2026-10-30T03:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40995087369",
+    "run_id": "40997984685",
     "late": false,
-    "late_seconds": 146,
+    "late_seconds": 174,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -117,9 +117,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-10-30T02:33:44Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-30T03:02:26Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -140,12 +140,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_d1d05831fabe8abf",
-            "title": "[Voice] Grok Degradation"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
