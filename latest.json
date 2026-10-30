@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T02:03:08Z",
-  "scheduled_for": "2026-10-30T02:00:00Z",
+  "checked_at": "2026-10-30T02:33:44Z",
+  "scheduled_for": "2026-10-30T02:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40989394982",
+    "run_id": "40992393770",
     "late": false,
-    "late_seconds": 188,
+    "late_seconds": 224,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,8 +73,17 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "6 active incident(s)",
+        "summary": "9 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_d1d05831fabe8abf",
+            "title": "[Grok (Android)] Grok Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/android-app/ps_d1d05831fabe8abf",
+            "started_at": "2026-10-30T01:45:19Z",
+            "updated_at": "2026-10-30T01:45:19Z"
+          },
           {
             "id": "ps_d1d05831fabe8abf",
             "title": "[grok.com] Grok Degradation",
@@ -90,6 +99,24 @@
             "status": "active",
             "impact": "minor",
             "url": "https://status.x.ai/imagine/ps_d1d05831fabe8abf",
+            "started_at": "2026-10-30T01:45:19Z",
+            "updated_at": "2026-10-30T01:45:19Z"
+          },
+          {
+            "id": "ps_d1d05831fabe8abf",
+            "title": "[Grok (iOS)] Grok Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/ios-app/ps_d1d05831fabe8abf",
+            "started_at": "2026-10-30T01:45:19Z",
+            "updated_at": "2026-10-30T01:45:19Z"
+          },
+          {
+            "id": "ps_d1d05831fabe8abf",
+            "title": "[Voice] Grok Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/voice/ps_d1d05831fabe8abf",
             "started_at": "2026-10-30T01:45:19Z",
             "updated_at": "2026-10-30T01:45:19Z"
           },
@@ -135,9 +162,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-30T01:31:51Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-10-30T02:03:08Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -157,12 +184,7 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "ps_d1d05831fabe8abf",
-            "title": "[Imagine] Grok Degradation"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
