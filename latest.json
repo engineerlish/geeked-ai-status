@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-29T23:31:49Z",
-  "scheduled_for": "2026-10-29T23:30:00Z",
+  "checked_at": "2026-10-30T00:05:06Z",
+  "scheduled_for": "2026-10-30T00:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "40973748548",
+    "run_id": "40977378485",
     "late": false,
-    "late_seconds": 109,
+    "late_seconds": 306,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,8 +73,17 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "4 active incident(s)",
+        "summary": "5 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_e5eb22a9954466c4",
+            "title": "[Grok Bot] Auto Review Degradation",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_e5eb22a9954466c4",
+            "started_at": "2026-10-29T23:44:42Z",
+            "updated_at": "2026-10-29T23:44:42Z"
+          },
           {
             "id": "ps_35b661ea1cde5cbc",
             "title": "[Automations] Cloud Agent Degradation",
@@ -119,7 +128,7 @@
   "changes": {
     "any": true,
     "summary": "Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-10-29T23:02:09Z",
+    "previous_checked_at": "2026-10-29T23:31:49Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -141,8 +150,8 @@
         "status_changed": null,
         "incidents_started": [
           {
-            "id": "ps_35b661ea1cde5cbc",
-            "title": "[Cursor IDE (Desktop)] Cloud Agent Degradation"
+            "id": "ps_e5eb22a9954466c4",
+            "title": "[Grok Bot] Auto Review Degradation"
           }
         ],
         "incidents_resolved": []
