@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-31T06:02:30Z",
-  "scheduled_for": "2026-10-31T06:00:00Z",
+  "checked_at": "2026-10-31T06:32:33Z",
+  "scheduled_for": "2026-10-31T06:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41174950280",
+    "run_id": "41177033968",
     "late": false,
-    "late_seconds": 150,
+    "late_seconds": 153,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,54 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "4 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_061cf14060aff263",
+            "title": "[Automations] Multiple services degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_061cf14060aff263",
+            "started_at": "2026-10-31T06:04:02Z",
+            "updated_at": "2026-10-31T06:04:02Z"
+          },
+          {
+            "id": "ps_061cf14060aff263",
+            "title": "[Cloud Agents] Multiple services degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_061cf14060aff263",
+            "started_at": "2026-10-31T06:04:02Z",
+            "updated_at": "2026-10-31T06:04:02Z"
+          },
+          {
+            "id": "ps_061cf14060aff263",
+            "title": "[cursor.com] Multiple services degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-com/ps_061cf14060aff263",
+            "started_at": "2026-10-31T06:04:02Z",
+            "updated_at": "2026-10-31T06:04:02Z"
+          },
+          {
+            "id": "ps_061cf14060aff263",
+            "title": "[Grok Bot] Multiple services degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_061cf14060aff263",
+            "started_at": "2026-10-31T06:04:02Z",
+            "updated_at": "2026-10-31T06:04:02Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-10-31T05:31:36Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-10-31T06:02:30Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +138,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_061cf14060aff263",
+            "title": "[Grok Bot] Multiple services degraded"
+          }
+        ],
         "incidents_resolved": []
       }
     }
