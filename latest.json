@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T09:02:33Z",
-  "scheduled_for": "2026-11-02T09:00:00Z",
+  "checked_at": "2026-11-02T09:31:17Z",
+  "scheduled_for": "2026-11-02T09:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41417457491",
+    "run_id": "41421300391",
     "late": false,
-    "late_seconds": 153,
+    "late_seconds": 77,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,36 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "2 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_dece7cc03ecef152",
+            "title": "[Cursor IDE (Desktop)] Issues with source control integrations",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_dece7cc03ecef152",
+            "started_at": "2026-11-02T09:09:29Z",
+            "updated_at": "2026-11-02T09:09:29Z"
+          },
+          {
+            "id": "ps_dece7cc03ecef152",
+            "title": "[Grok Bot] Issues with source control integrations",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_dece7cc03ecef152",
+            "started_at": "2026-11-02T09:09:29Z",
+            "updated_at": "2026-11-02T09:09:29Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-02T08:31:53Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-02T09:02:33Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +120,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_dece7cc03ecef152",
+            "title": "[Grok Bot] Issues with source control integrations"
+          }
+        ],
         "incidents_resolved": []
       }
     }
