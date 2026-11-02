@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T09:31:17Z",
-  "scheduled_for": "2026-11-02T09:30:00Z",
+  "checked_at": "2026-11-02T10:02:11Z",
+  "scheduled_for": "2026-11-02T10:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41421300391",
+    "run_id": "41425470892",
     "late": false,
-    "late_seconds": 77,
+    "late_seconds": 131,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -99,9 +99,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-02T09:02:33Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-02T09:31:17Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -120,16 +120,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_dece7cc03ecef152",
-            "title": "[Grok Bot] Issues with source control integrations"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
