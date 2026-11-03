@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T02:31:47Z",
-  "scheduled_for": "2026-11-03T02:30:00Z",
+  "checked_at": "2026-11-03T03:02:08Z",
+  "scheduled_for": "2026-11-03T03:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41566669483",
+    "run_id": "41569717042",
     "late": false,
-    "late_seconds": 107,
+    "late_seconds": 128,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -56,11 +56,11 @@
           {
             "id": "01M6FDZ89W4PKDS19K496J307G",
             "title": "File upload errors in ChatGPT",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M6FDZ89W4PKDS19K496J307G",
             "started_at": "2026-11-03T00:46:58Z",
-            "updated_at": "2026-11-03T02:06:04Z"
+            "updated_at": "2026-11-03T02:51:29Z"
           }
         ],
         "affected_components": [
@@ -97,7 +97,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-03T02:02:28Z",
+    "previous_checked_at": "2026-11-03T02:31:47Z",
     "providers": {
       "anthropic": {
         "models_added": [],
