@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T22:31:37Z",
-  "scheduled_for": "2026-11-03T22:30:00Z",
+  "checked_at": "2026-11-03T23:01:51Z",
+  "scheduled_for": "2026-11-03T23:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41731543090",
+    "run_id": "41735791177",
     "late": false,
-    "late_seconds": 97,
+    "late_seconds": 111,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,36 +72,17 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "2 active incident(s)",
-        "incidents": [
-          {
-            "id": "ps_b88ca87004b1d3b9",
-            "title": "[Bugbot] 3 \"Slow clones from GH due to Github degradation\"",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/bugbot/ps_b88ca87004b1d3b9",
-            "started_at": "2026-11-03T21:40:43Z",
-            "updated_at": "2026-11-03T21:40:43Z"
-          },
-          {
-            "id": "ps_b88ca87004b1d3b9",
-            "title": "[Cloud Agents] 3 \"Slow clones from GH due to Github degradation\"",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/cloud-agents/ps_b88ca87004b1d3b9",
-            "started_at": "2026-11-03T21:40:43Z",
-            "updated_at": "2026-11-03T21:40:43Z"
-          }
-        ],
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-03T22:02:03Z",
+    "any": true,
+    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-03T22:31:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -120,9 +101,17 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "ps_b88ca87004b1d3b9",
+            "title": "[Cloud Agents] 3 \"Slow clones from GH due to Github degradation\""
+          }
+        ]
       }
     }
   }
