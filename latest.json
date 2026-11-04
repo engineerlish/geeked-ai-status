@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T23:02:05Z",
-  "scheduled_for": "2026-11-04T23:00:00Z",
+  "checked_at": "2026-11-04T23:31:50Z",
+  "scheduled_for": "2026-11-04T23:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41930366603",
+    "run_id": "41934417253",
     "late": false,
-    "late_seconds": 125,
+    "late_seconds": 110,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-04T22:31:51Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-04T23:02:05Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,16 +104,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M6MBCX427A7113A3T4FJ1N6Y",
-            "title": "Elevated error rates across paid ChatGPT plans"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
