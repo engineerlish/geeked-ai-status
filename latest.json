@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T16:02:01Z",
-  "scheduled_for": "2026-11-05T16:00:00Z",
+  "checked_at": "2026-11-05T16:31:56Z",
+  "scheduled_for": "2026-11-05T16:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42060844652",
+    "run_id": "42065382386",
     "late": false,
-    "late_seconds": 121,
+    "late_seconds": 116,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -60,7 +60,7 @@
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R",
             "started_at": "2026-11-05T15:25:03Z",
-            "updated_at": "2026-11-05T15:30:00Z"
+            "updated_at": "2026-11-05T16:26:31Z"
           }
         ],
         "affected_components": [
@@ -95,9 +95,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-05T15:31:42Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-05T16:02:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -116,17 +116,9 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_78783e1b35b98b43",
-            "title": "[Cursor IDE (iOS)] composer-2.5 degraded"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
