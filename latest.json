@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T00:43:24Z",
-  "scheduled_for": "2026-11-05T00:30:00Z",
+  "checked_at": "2026-11-05T01:02:15Z",
+  "scheduled_for": "2026-11-05T01:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "41943424373",
-    "late": true,
-    "late_seconds": 804,
+    "run_id": "41945685783",
+    "late": false,
+    "late_seconds": 135,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved; Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-05T00:04:34Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-05T00:43:24Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,31 +104,15 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M6MBCX427A7113A3T4FJ1N6Y",
-            "title": "Elevated error rates across paid ChatGPT plans"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_c0cee9e504398968",
-            "title": "[Grok Bot] Degraded Performance - Grok Bot"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
