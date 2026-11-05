@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T17:02:25Z",
-  "scheduled_for": "2026-11-05T17:00:00Z",
+  "checked_at": "2026-11-05T17:31:53Z",
+  "scheduled_for": "2026-11-05T17:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42070612798",
+    "run_id": "42075484769",
     "late": false,
-    "late_seconds": 145,
+    "late_seconds": 113,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -51,24 +51,19 @@
         "page_url": "https://status.openai.com",
         "error": null,
         "overall": "degraded",
-        "summary": "Partial System Degradation",
+        "summary": "All Systems Operational",
         "incidents": [
           {
             "id": "01M6P50GPP1V98EF8MJ9SH393R",
             "title": "ChatGPT Work and Dots Errors",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R",
             "started_at": "2026-11-05T15:25:03Z",
-            "updated_at": "2026-11-05T16:57:41Z"
+            "updated_at": "2026-11-05T17:05:56Z"
           }
         ],
-        "affected_components": [
-          {
-            "name": "ChatGPT Work",
-            "status": "degraded_performance"
-          }
-        ]
+        "affected_components": []
       }
     },
     "xai": {
@@ -97,7 +92,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-05T16:31:56Z",
+    "previous_checked_at": "2026-11-05T17:02:25Z",
     "providers": {
       "anthropic": {
         "models_added": [],
