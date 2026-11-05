@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-05T15:31:42Z",
+  "scheduled_for": "2026-11-05T15:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "42055856458",
+    "late": false,
+    "late_seconds": 102,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M6P50GPP1V98EF8MJ9SH393R",
+            "title": "ChatGPT Issues",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R",
+            "started_at": "2026-11-05T15:25:03Z",
+            "updated_at": "2026-11-05T15:30:00Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "ChatGPT Work",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "degraded",
+        "summary": "6 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Automations] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          },
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Bugbot] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/bugbot/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          },
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Cloud Agents] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          },
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[CLI] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-cli/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          },
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Cursor IDE (Desktop)] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          },
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Cursor IDE (iOS)] composer-2.5 degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-ios/ps_78783e1b35b98b43",
+            "started_at": "2026-11-05T15:06:52Z",
+            "updated_at": "2026-11-05T15:06:52Z"
+          }
+        ],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s); Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-05T15:02:06Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M6P50GPP1V98EF8MJ9SH393R",
+            "title": "ChatGPT Issues"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_78783e1b35b98b43",
+            "title": "[Cursor IDE (iOS)] composer-2.5 degraded"
+          }
+        ],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
