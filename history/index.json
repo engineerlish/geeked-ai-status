@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-11-06T18:31:35Z",
-  "snapshots_total": 1033,
+  "updated_at": "2026-11-06T19:01:43Z",
+  "snapshots_total": 1034,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -158,10 +158,10 @@
       "failed": 0
     },
     "2026-11-06": {
-      "snapshots": 38,
+      "snapshots": 39,
       "late": 1,
       "missed": 0,
-      "changed": 5,
+      "changed": 6,
       "failed": 0
     }
   },
@@ -585,6 +585,11 @@
       "checked_at": "2026-11-06T15:31:50Z",
       "path": "history/2026/11/06/1531.json",
       "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved"
+    },
+    {
+      "checked_at": "2026-11-06T19:01:43Z",
+      "path": "history/2026/11/06/1901.json",
+      "summary": "ChatGPT: 1 new incident(s)"
     }
   ],
   "missed": [

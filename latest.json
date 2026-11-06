@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T18:31:35Z",
-  "scheduled_for": "2026-11-06T18:30:00Z",
+  "checked_at": "2026-11-06T19:01:43Z",
+  "scheduled_for": "2026-11-06T19:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42271481887",
+    "run_id": "42275964557",
     "late": false,
-    "late_seconds": 95,
+    "late_seconds": 103,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -52,7 +52,17 @@
         "error": null,
         "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [],
+        "incidents": [
+          {
+            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
+            "title": "Elevated error rates with Brex Cards and U.S. business Mastercards",
+            "status": "identified",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
+            "started_at": "2026-11-06T18:38:43Z",
+            "updated_at": "2026-11-06T18:50:47Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -80,9 +90,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-06T18:01:59Z",
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-06T18:31:35Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -95,7 +105,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
+            "title": "Elevated error rates with Brex Cards and U.S. business Mastercards"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
