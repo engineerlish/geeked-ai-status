@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T11:31:37Z",
-  "scheduled_for": "2026-11-06T11:30:00Z",
+  "checked_at": "2026-11-06T12:02:10Z",
+  "scheduled_for": "2026-11-06T12:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42210891415",
+    "run_id": "42214587416",
     "late": false,
-    "late_seconds": 97,
+    "late_seconds": 130,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_183910c201a91593",
+            "title": "[Grok Bot] Computer use in Grok Bot fails for users in a few regions.",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_183910c201a91593",
+            "started_at": "2026-11-06T11:49:46Z",
+            "updated_at": "2026-11-06T11:49:46Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-06T11:01:57Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-06T11:31:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +111,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_183910c201a91593",
+            "title": "[Grok Bot] Computer use in Grok Bot fails for users in a few regions."
+          }
+        ],
         "incidents_resolved": []
       }
     }
