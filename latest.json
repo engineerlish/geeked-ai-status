@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T19:01:43Z",
-  "scheduled_for": "2026-11-06T19:00:00Z",
+  "checked_at": "2026-11-06T19:31:42Z",
+  "scheduled_for": "2026-11-06T19:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42275964557",
+    "run_id": "42280384330",
     "late": false,
-    "late_seconds": 103,
+    "late_seconds": 102,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-06T18:31:35Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-06T19:01:43Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -105,12 +105,7 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-            "title": "Elevated error rates with Brex Cards and U.S. business Mastercards"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
