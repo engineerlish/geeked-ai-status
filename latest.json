@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T15:31:50Z",
-  "scheduled_for": "2026-11-06T15:30:00Z",
+  "checked_at": "2026-11-06T16:02:07Z",
+  "scheduled_for": "2026-11-06T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42243875227",
+    "run_id": "42248551273",
     "late": false,
-    "late_seconds": 110,
+    "late_seconds": 127,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-06T15:02:00Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-06T15:31:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,17 +101,9 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_9a160a3b12ec99d1",
-            "title": "[Grok Bot] Grok Bot is currently degraded"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
