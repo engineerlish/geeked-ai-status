@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T13:31:31Z",
-  "scheduled_for": "2026-11-06T13:30:00Z",
+  "checked_at": "2026-11-06T14:02:17Z",
+  "scheduled_for": "2026-11-06T14:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42226168934",
+    "run_id": "42230361175",
     "late": false,
-    "late_seconds": 91,
+    "late_seconds": 137,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_9a160a3b12ec99d1",
+            "title": "[Grok Bot] Grok Bot is currently degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_9a160a3b12ec99d1",
+            "started_at": "2026-11-06T13:57:57Z",
+            "updated_at": "2026-11-06T13:57:57Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-06T13:02:07Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-06T13:31:31Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +111,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_9a160a3b12ec99d1",
+            "title": "[Grok Bot] Grok Bot is currently degraded"
+          }
+        ],
         "incidents_resolved": []
       }
     }
