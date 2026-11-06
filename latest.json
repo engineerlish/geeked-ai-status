@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T22:31:47Z",
-  "scheduled_for": "2026-11-06T22:30:00Z",
+  "checked_at": "2026-11-06T23:01:56Z",
+  "scheduled_for": "2026-11-06T23:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42305370413",
+    "run_id": "42309014971",
     "late": false,
-    "late_seconds": 107,
+    "late_seconds": 116,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -55,12 +55,12 @@
         "incidents": [
           {
             "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-            "title": "Elevated error rates with Brex Cards and U.S. business Mastercards",
+            "title": "Elevated error rates with some U.S. business Mastercards",
             "status": "identified",
             "impact": "none",
             "url": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
             "started_at": "2026-11-06T18:38:43Z",
-            "updated_at": "2026-11-06T18:50:47Z"
+            "updated_at": "2026-11-06T22:59:59Z"
           }
         ],
         "affected_components": []
@@ -92,7 +92,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-06T22:01:54Z",
+    "previous_checked_at": "2026-11-06T22:31:47Z",
     "providers": {
       "anthropic": {
         "models_added": [],
