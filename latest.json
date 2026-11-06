@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T12:02:10Z",
-  "scheduled_for": "2026-11-06T12:00:00Z",
+  "checked_at": "2026-11-06T12:33:05Z",
+  "scheduled_for": "2026-11-06T12:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42214587416",
+    "run_id": "42218513220",
     "late": false,
-    "late_seconds": 130,
+    "late_seconds": 185,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,27 +72,17 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "1 active incident(s)",
-        "incidents": [
-          {
-            "id": "ps_183910c201a91593",
-            "title": "[Grok Bot] Computer use in Grok Bot fails for users in a few regions.",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/grok-bot/ps_183910c201a91593",
-            "started_at": "2026-11-06T11:49:46Z",
-            "updated_at": "2026-11-06T11:49:46Z"
-          }
-        ],
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
         "affected_components": []
       }
     }
   },
   "changes": {
     "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-06T11:31:37Z",
+    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-06T12:02:10Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -112,16 +102,16 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "degraded"
+          "from": "degraded",
+          "to": "operational"
         },
-        "incidents_started": [
+        "incidents_started": [],
+        "incidents_resolved": [
           {
             "id": "ps_183910c201a91593",
             "title": "[Grok Bot] Computer use in Grok Bot fails for users in a few regions."
           }
-        ],
-        "incidents_resolved": []
+        ]
       }
     }
   }
