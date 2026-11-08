@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-08T08:31:43Z",
+  "scheduled_for": "2026-11-08T08:30:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "42463306156",
+    "late": false,
+    "late_seconds": 103,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partially Degraded Service",
+        "incidents": [
+          {
+            "id": "kw2lxj1th04c",
+            "title": "Degraded performance for Claude Fable 5.1",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://stspg.io/3m3q1nwb142k",
+            "started_at": "2026-11-08T08:28:32Z",
+            "updated_at": "2026-11-08T08:28:33Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude API (api.anthropic.com)",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude Code",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [
+          {
+            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
+            "title": "Elevated error rates with some U.S. business Mastercards",
+            "status": "monitoring",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
+            "started_at": "2026-11-06T18:38:43Z",
+            "updated_at": "2026-11-07T01:29:31Z"
+          }
+        ],
+        "affected_components": []
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-08T08:02:13Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "kw2lxj1th04c",
+            "title": "Degraded performance for Claude Fable 5.1"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}
