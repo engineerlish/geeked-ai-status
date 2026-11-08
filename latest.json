@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-08T08:31:43Z",
-  "scheduled_for": "2026-11-08T08:30:00Z",
+  "checked_at": "2026-11-08T09:01:53Z",
+  "scheduled_for": "2026-11-08T09:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42463306156",
+    "run_id": "42465403851",
     "late": false,
-    "late_seconds": 103,
+    "late_seconds": 113,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,37 +28,10 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "degraded",
-        "summary": "Partially Degraded Service",
-        "incidents": [
-          {
-            "id": "kw2lxj1th04c",
-            "title": "Degraded performance for Claude Fable 5.1",
-            "status": "investigating",
-            "impact": "minor",
-            "url": "https://stspg.io/3m3q1nwb142k",
-            "started_at": "2026-11-08T08:28:32Z",
-            "updated_at": "2026-11-08T08:28:33Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude API (api.anthropic.com)",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Code",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Cowork",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "openai": {
@@ -118,23 +91,23 @@
   },
   "changes": {
     "any": true,
-    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-08T08:02:13Z",
+    "summary": "Claude operational (was degraded); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-08T08:31:43Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": {
-          "from": "operational",
-          "to": "degraded"
+          "from": "degraded",
+          "to": "operational"
         },
-        "incidents_started": [
+        "incidents_started": [],
+        "incidents_resolved": [
           {
             "id": "kw2lxj1th04c",
             "title": "Degraded performance for Claude Fable 5.1"
           }
-        ],
-        "incidents_resolved": []
+        ]
       },
       "openai": {
         "models_added": [],
