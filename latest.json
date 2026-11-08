@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-08T15:31:42Z",
-  "scheduled_for": "2026-11-08T15:30:00Z",
+  "checked_at": "2026-11-08T16:01:42Z",
+  "scheduled_for": "2026-11-08T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42495245987",
+    "run_id": "42497752392",
     "late": false,
     "late_seconds": 102,
     "missed_slots": [],
@@ -56,11 +56,11 @@
           {
             "id": "01M6XVDCKRT3PSB0YP8J30GTD5",
             "title": "Elevated errors with image generation",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M6XVDCKRT3PSB0YP8J30GTD5",
             "started_at": "2026-11-08T15:11:15Z",
-            "updated_at": "2026-11-08T15:19:25Z"
+            "updated_at": "2026-11-08T15:43:50Z"
           },
           {
             "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
@@ -104,9 +104,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-08T15:01:36Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-08T15:31:42Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -118,16 +118,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M6XVDCKRT3PSB0YP8J30GTD5",
-            "title": "Elevated errors with image generation"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
