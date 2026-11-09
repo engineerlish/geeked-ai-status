@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T23:01:56Z",
-  "scheduled_for": "2026-11-09T23:00:00Z",
+  "checked_at": "2026-11-09T23:31:41Z",
+  "scheduled_for": "2026-11-09T23:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42717021579",
+    "run_id": "42721152441",
     "late": false,
-    "late_seconds": 116,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,9 +50,18 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
         "incidents": [
+          {
+            "id": "01M7193DWYRFWQM5W6E3VZ7TM7",
+            "title": "Elevated Errors On API",
+            "status": "identified",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M7193DWYRFWQM5W6E3VZ7TM7",
+            "started_at": "2026-11-09T23:08:12Z",
+            "updated_at": "2026-11-09T23:08:12Z"
+          },
           {
             "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
             "title": "Elevated error rates with some U.S. business Mastercards",
@@ -63,7 +72,64 @@
             "updated_at": "2026-11-07T01:29:31Z"
           }
         ],
-        "affected_components": []
+        "affected_components": [
+          {
+            "name": "Chat Completions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Responses",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Agents",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Decisions",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Fine-tuning",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Embeddings",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Images",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Batch",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Audio",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Moderations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Realtime",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Files",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Login",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "Live",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -82,17 +148,54 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "4 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_36cccee22d7e0c91",
+            "title": "[Automations] Elevated errors for OpenAI model requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/automations/ps_36cccee22d7e0c91",
+            "started_at": "2026-11-09T23:10:16Z",
+            "updated_at": "2026-11-09T23:10:16Z"
+          },
+          {
+            "id": "ps_36cccee22d7e0c91",
+            "title": "[Cloud Agents] Elevated errors for OpenAI model requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cloud-agents/ps_36cccee22d7e0c91",
+            "started_at": "2026-11-09T23:10:16Z",
+            "updated_at": "2026-11-09T23:10:16Z"
+          },
+          {
+            "id": "ps_36cccee22d7e0c91",
+            "title": "[CLI] Elevated errors for OpenAI model requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-cli/ps_36cccee22d7e0c91",
+            "started_at": "2026-11-09T23:10:16Z",
+            "updated_at": "2026-11-09T23:10:16Z"
+          },
+          {
+            "id": "ps_36cccee22d7e0c91",
+            "title": "[Cursor IDE (Desktop)] Elevated errors for OpenAI model requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_36cccee22d7e0c91",
+            "started_at": "2026-11-09T23:10:16Z",
+            "updated_at": "2026-11-09T23:10:16Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-09T22:31:50Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s); Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-09T23:01:56Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,15 +207,31 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M7193DWYRFWQM5W6E3VZ7TM7",
+            "title": "Elevated Errors On API"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_36cccee22d7e0c91",
+            "title": "[Cursor IDE (Desktop)] Elevated errors for OpenAI model requests"
+          }
+        ],
         "incidents_resolved": []
       }
     }
