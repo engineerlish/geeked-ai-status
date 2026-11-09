@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T18:31:17Z",
-  "scheduled_for": "2026-11-09T18:30:00Z",
+  "checked_at": "2026-11-09T19:01:44Z",
+  "scheduled_for": "2026-11-09T19:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42674721157",
+    "run_id": "42679371989",
     "late": false,
-    "late_seconds": 77,
+    "late_seconds": 104,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -104,9 +104,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-09T18:02:39Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-09T18:31:17Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -118,16 +118,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M70RDA2GWD2WXE58ANY0WV5R",
-            "title": "Elevated ChatGPT Conversation Errors"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
