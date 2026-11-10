@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T00:04:06Z",
-  "scheduled_for": "2026-11-10T00:00:00Z",
+  "checked_at": "2026-11-10T00:42:50Z",
+  "scheduled_for": "2026-11-10T00:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42725400251",
-    "late": false,
-    "late_seconds": 246,
+    "run_id": "42730375247",
+    "late": true,
+    "late_seconds": 770,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT operational (was degraded); ChatGPT: 1 incident(s) resolved; Grok operational (was degraded); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-09T23:31:41Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-10T00:04:06Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,32 +104,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M7193DWYRFWQM5W6E3VZ7TM7",
-            "title": "Elevated Errors On API"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_36cccee22d7e0c91",
-            "title": "[Cursor IDE (Desktop)] Elevated errors for OpenAI model requests"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
