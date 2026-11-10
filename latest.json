@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T07:31:37Z",
-  "scheduled_for": "2026-11-10T07:30:00Z",
+  "checked_at": "2026-11-10T08:02:20Z",
+  "scheduled_for": "2026-11-10T08:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42775879758",
+    "run_id": "42779520858",
     "late": false,
-    "late_seconds": 97,
+    "late_seconds": 140,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-10T07:02:11Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-10T07:31:37Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -106,12 +106,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M71W79MAGEXEX93QTVTBYJ4K",
-            "title": "Incorrect cost data in Costs API exports"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
