@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T18:31:15Z",
-  "scheduled_for": "2026-11-10T18:30:00Z",
+  "checked_at": "2026-11-10T19:01:55Z",
+  "scheduled_for": "2026-11-10T19:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42876002555",
+    "run_id": "42881127469",
     "late": false,
-    "late_seconds": 75,
+    "late_seconds": 115,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -72,17 +72,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_bf5495b2ac4634a8",
+            "title": "[grok.com] Usage data slow or unavailable for some users.",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-com/ps_bf5495b2ac4634a8",
+            "started_at": "2026-11-10T18:32:45Z",
+            "updated_at": "2026-11-10T18:32:45Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-10T18:01:54Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-10T18:31:15Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -101,8 +111,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_bf5495b2ac4634a8",
+            "title": "[grok.com] Usage data slow or unavailable for some users."
+          }
+        ],
         "incidents_resolved": []
       }
     }
