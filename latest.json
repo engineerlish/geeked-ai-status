@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T16:31:44Z",
-  "scheduled_for": "2026-11-10T16:30:00Z",
+  "checked_at": "2026-11-10T17:01:55Z",
+  "scheduled_for": "2026-11-10T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42855403037",
+    "run_id": "42860662526",
     "late": false,
-    "late_seconds": 104,
+    "late_seconds": 115,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,9 +80,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-10T16:02:20Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-10T16:31:44Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -96,12 +96,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-            "title": "Elevated error rates with some U.S. business Mastercards"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
