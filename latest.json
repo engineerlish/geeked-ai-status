@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T19:01:55Z",
-  "scheduled_for": "2026-11-10T19:00:00Z",
+  "checked_at": "2026-11-10T19:31:43Z",
+  "scheduled_for": "2026-11-10T19:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42881127469",
+    "run_id": "42886145355",
     "late": false,
-    "late_seconds": 115,
+    "late_seconds": 103,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-10T18:31:15Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-10T19:01:55Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -111,16 +111,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_bf5495b2ac4634a8",
-            "title": "[grok.com] Usage data slow or unavailable for some users."
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
