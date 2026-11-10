@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T16:02:20Z",
-  "scheduled_for": "2026-11-10T16:00:00Z",
+  "checked_at": "2026-11-10T16:31:44Z",
+  "scheduled_for": "2026-11-10T16:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42850532785",
+    "run_id": "42855403037",
     "late": false,
-    "late_seconds": 140,
+    "late_seconds": 104,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -52,17 +52,7 @@
         "error": null,
         "overall": "operational",
         "summary": "All Systems Operational",
-        "incidents": [
-          {
-            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-            "title": "Elevated error rates with some U.S. business Mastercards",
-            "status": "monitoring",
-            "impact": "none",
-            "url": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7",
-            "started_at": "2026-11-06T18:38:43Z",
-            "updated_at": "2026-11-07T01:29:31Z"
-          }
-        ],
+        "incidents": [],
         "affected_components": []
       }
     },
@@ -90,9 +80,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-10T15:31:51Z",
+    "any": true,
+    "summary": "ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-10T16:02:20Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -106,7 +96,12 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
+            "title": "Elevated error rates with some U.S. business Mastercards"
+          }
+        ]
       },
       "xai": {
         "models_added": [],
