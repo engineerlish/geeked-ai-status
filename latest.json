@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T04:31:40Z",
-  "scheduled_for": "2026-11-10T04:30:00Z",
+  "checked_at": "2026-11-10T05:02:15Z",
+  "scheduled_for": "2026-11-10T05:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "42756413553",
+    "run_id": "42759552872",
     "late": false,
-    "late_seconds": 100,
+    "late_seconds": 135,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -54,6 +54,15 @@
         "summary": "All Systems Operational",
         "incidents": [
           {
+            "id": "01M71W79MAGEXEX93QTVTBYJ4K",
+            "title": "Incorrect cost data in Costs API exports",
+            "status": "monitoring",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M71W79MAGEXEX93QTVTBYJ4K",
+            "started_at": "2026-11-10T04:42:21Z",
+            "updated_at": "2026-11-10T04:42:21Z"
+          },
+          {
             "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
             "title": "Elevated error rates with some U.S. business Mastercards",
             "status": "monitoring",
@@ -90,9 +99,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-10T04:02:04Z",
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-10T04:31:40Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -105,7 +114,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M71W79MAGEXEX93QTVTBYJ4K",
+            "title": "Incorrect cost data in Costs API exports"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
