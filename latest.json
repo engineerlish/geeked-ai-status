@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-11T23:01:43Z",
-  "scheduled_for": "2026-11-11T23:00:00Z",
+  "checked_at": "2026-11-11T23:31:44Z",
+  "scheduled_for": "2026-11-11T23:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43116559561",
+    "run_id": "43120491025",
     "late": false,
-    "late_seconds": 103,
+    "late_seconds": 104,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT major outage (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-11T22:31:39Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-11T23:01:43Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -104,16 +104,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "major_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "01M76CW2D7FM7K7F8NJ4W0G08N",
-            "title": "Unable to start new Workspace Agent runs"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
