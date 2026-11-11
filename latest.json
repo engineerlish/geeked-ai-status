@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-11T22:31:39Z",
-  "scheduled_for": "2026-11-11T22:30:00Z",
+  "checked_at": "2026-11-11T23:01:43Z",
+  "scheduled_for": "2026-11-11T23:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43112484722",
+    "run_id": "43116559561",
     "late": false,
-    "late_seconds": 99,
+    "late_seconds": 103,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,9 +50,19 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
+        "overall": "major_outage",
+        "summary": "Major System Outage",
+        "incidents": [
+          {
+            "id": "01M76CW2D7FM7K7F8NJ4W0G08N",
+            "title": "Unable to start new Workspace Agent runs",
+            "status": "investigating",
+            "impact": "critical",
+            "url": "https://status.openai.com/incidents/01M76CW2D7FM7K7F8NJ4W0G08N",
+            "started_at": "2026-11-11T22:50:17Z",
+            "updated_at": "2026-11-11T22:50:17Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -80,9 +90,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-11T22:01:40Z",
+    "any": true,
+    "summary": "ChatGPT major outage (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-11T22:31:39Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -94,8 +104,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "major_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "01M76CW2D7FM7K7F8NJ4W0G08N",
+            "title": "Unable to start new Workspace Agent runs"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
