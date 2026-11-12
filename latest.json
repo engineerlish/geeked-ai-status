@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T20:32:05Z",
-  "scheduled_for": "2026-11-12T20:30:00Z",
+  "checked_at": "2026-11-12T21:01:59Z",
+  "scheduled_for": "2026-11-12T21:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43301209619",
+    "run_id": "43306138424",
     "late": false,
-    "late_seconds": 125,
+    "late_seconds": 119,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -102,7 +102,7 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "summary": "2 active incident(s)",
         "incidents": [
           {
             "id": "ps_94275750e294382d",
@@ -112,6 +112,15 @@
             "url": "https://status.x.ai/cursor-com/ps_94275750e294382d",
             "started_at": "2026-11-12T20:08:15Z",
             "updated_at": "2026-11-12T20:08:15Z"
+          },
+          {
+            "id": "ps_94275750e294382d",
+            "title": "[Grok Bot] Elevated errors for some requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_94275750e294382d",
+            "started_at": "2026-11-12T20:08:15Z",
+            "updated_at": "2026-11-12T20:08:15Z"
           }
         ],
         "affected_components": []
@@ -119,9 +128,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-12T20:01:50Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-12T20:32:05Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -140,16 +149,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_94275750e294382d",
-            "title": "[cursor.com] Elevated errors for some requests"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
