@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T18:02:12Z",
-  "scheduled_for": "2026-11-12T18:00:00Z",
+  "checked_at": "2026-11-12T18:31:41Z",
+  "scheduled_for": "2026-11-12T18:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43275596782",
+    "run_id": "43280735417",
     "late": false,
-    "late_seconds": 132,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -65,9 +65,19 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M78GAT3AK9P9W8Z230KHFVE8",
+            "title": "Elevated errors affecting the Microsoft 365 connector",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M78GAT3AK9P9W8Z230KHFVE8",
+            "started_at": "2026-11-12T18:29:14Z",
+            "updated_at": "2026-11-12T18:29:14Z"
+          }
+        ],
         "affected_components": []
       }
     },
@@ -96,29 +106,29 @@
   },
   "changes": {
     "any": true,
-    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-12T17:30:53Z",
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-12T18:02:12Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "sqn3fg1l96dl",
-            "title": "Elevated errors affecting the Microsoft 365 connector"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M78GAT3AK9P9W8Z230KHFVE8",
+            "title": "Elevated errors affecting the Microsoft 365 connector"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
