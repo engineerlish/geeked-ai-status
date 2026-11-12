@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-11-12T21:31:12Z",
-  "snapshots_total": 1326,
+  "updated_at": "2026-11-12T22:01:57Z",
+  "snapshots_total": 1327,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -200,10 +200,10 @@
       "failed": 0
     },
     "2026-11-12": {
-      "snapshots": 44,
+      "snapshots": 45,
       "late": 1,
       "missed": 0,
-      "changed": 5,
+      "changed": 6,
       "failed": 0
     }
   },
@@ -727,6 +727,11 @@
       "checked_at": "2026-11-12T20:32:05Z",
       "path": "history/2026/11/12/2032.json",
       "summary": "Grok degraded (was operational); Grok: 1 new incident(s)"
+    },
+    {
+      "checked_at": "2026-11-12T22:01:57Z",
+      "path": "history/2026/11/12/2201.json",
+      "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved"
     }
   ],
   "missed": [

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T21:31:12Z",
-  "scheduled_for": "2026-11-12T21:30:00Z",
+  "checked_at": "2026-11-12T22:01:57Z",
+  "scheduled_for": "2026-11-12T22:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43311021562",
+    "run_id": "43316004870",
     "late": false,
-    "late_seconds": 72,
+    "late_seconds": 117,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -101,36 +101,17 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "2 active incident(s)",
-        "incidents": [
-          {
-            "id": "ps_94275750e294382d",
-            "title": "[cursor.com] Elevated errors for some requests",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/cursor-com/ps_94275750e294382d",
-            "started_at": "2026-11-12T20:08:15Z",
-            "updated_at": "2026-11-12T20:08:15Z"
-          },
-          {
-            "id": "ps_94275750e294382d",
-            "title": "[Grok Bot] Elevated errors for some requests",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/grok-bot/ps_94275750e294382d",
-            "started_at": "2026-11-12T20:08:15Z",
-            "updated_at": "2026-11-12T20:08:15Z"
-          }
-        ],
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-12T21:01:59Z",
+    "any": true,
+    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-12T21:31:12Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -149,9 +130,17 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "ps_94275750e294382d",
+            "title": "[Grok Bot] Elevated errors for some requests"
+          }
+        ]
       }
     }
   }
