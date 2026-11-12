@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T20:01:50Z",
-  "scheduled_for": "2026-11-12T20:00:00Z",
+  "checked_at": "2026-11-12T20:32:05Z",
+  "scheduled_for": "2026-11-12T20:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43296152211",
+    "run_id": "43301209619",
     "late": false,
-    "late_seconds": 110,
+    "late_seconds": 125,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -38,7 +38,7 @@
             "impact": "major",
             "url": "https://stspg.io/m0rbx38nmy1c",
             "started_at": "2026-11-12T17:52:44Z",
-            "updated_at": "2026-11-12T18:34:20Z"
+            "updated_at": "2026-11-12T20:28:28Z"
           }
         ],
         "affected_components": [
@@ -101,17 +101,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_94275750e294382d",
+            "title": "[cursor.com] Elevated errors for some requests",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-com/ps_94275750e294382d",
+            "started_at": "2026-11-12T20:08:15Z",
+            "updated_at": "2026-11-12T20:08:15Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-12T19:31:36Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-12T20:01:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -130,8 +140,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_94275750e294382d",
+            "title": "[cursor.com] Elevated errors for some requests"
+          }
+        ],
         "incidents_resolved": []
       }
     }
