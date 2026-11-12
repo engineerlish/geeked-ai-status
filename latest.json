@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T18:31:41Z",
-  "scheduled_for": "2026-11-12T18:30:00Z",
+  "checked_at": "2026-11-12T19:02:01Z",
+  "scheduled_for": "2026-11-12T19:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43280735417",
+    "run_id": "43285941413",
     "late": false,
-    "late_seconds": 101,
+    "late_seconds": 121,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -34,16 +34,20 @@
           {
             "id": "sqn3fg1l96dl",
             "title": "Elevated errors affecting the Microsoft 365 connector",
-            "status": "investigating",
+            "status": "identified",
             "impact": "major",
             "url": "https://stspg.io/m0rbx38nmy1c",
             "started_at": "2026-11-12T17:52:44Z",
-            "updated_at": "2026-11-12T17:52:45Z"
+            "updated_at": "2026-11-12T18:34:20Z"
           }
         ],
         "affected_components": [
           {
             "name": "claude.ai",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Cowork",
             "status": "partial_outage"
           }
         ]
@@ -105,9 +109,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-12T18:02:12Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-12T18:31:41Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -119,16 +123,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M78GAT3AK9P9W8Z230KHFVE8",
-            "title": "Elevated errors affecting the Microsoft 365 connector"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
