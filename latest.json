@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T22:01:57Z",
-  "scheduled_for": "2026-11-12T22:00:00Z",
+  "checked_at": "2026-11-12T22:31:48Z",
+  "scheduled_for": "2026-11-12T22:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43316004870",
+    "run_id": "43320714498",
     "late": false,
-    "late_seconds": 117,
+    "late_seconds": 108,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,7 +29,7 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Minor Service Outage",
+        "summary": "Partially Degraded Service",
         "incidents": [
           {
             "id": "sqn3fg1l96dl",
@@ -38,17 +38,17 @@
             "impact": "major",
             "url": "https://stspg.io/m0rbx38nmy1c",
             "started_at": "2026-11-12T17:52:44Z",
-            "updated_at": "2026-11-12T21:18:24Z"
+            "updated_at": "2026-11-12T22:23:58Z"
           }
         ],
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           },
           {
             "name": "Claude Cowork",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           }
         ]
       }
@@ -109,9 +109,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-12T21:31:12Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-12T22:01:57Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -130,17 +130,9 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "degraded",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_94275750e294382d",
-            "title": "[Grok Bot] Elevated errors for some requests"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
