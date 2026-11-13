@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T06:03:13Z",
-  "scheduled_for": "2026-11-13T06:00:00Z",
+  "checked_at": "2026-11-13T06:36:41Z",
+  "scheduled_for": "2026-11-13T06:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43376000792",
+    "run_id": "43379887742",
     "late": false,
-    "late_seconds": 193,
+    "late_seconds": 401,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -109,9 +109,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-13T05:31:34Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-13T06:03:13Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -125,12 +125,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M79GYA0GA772Y6D089AH5478",
-            "title": "Sites: Publishing failing"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
