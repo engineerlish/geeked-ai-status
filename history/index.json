@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-11-13T13:01:50Z",
-  "snapshots_total": 1357,
+  "updated_at": "2026-11-13T13:31:41Z",
+  "snapshots_total": 1358,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -207,10 +207,10 @@
       "failed": 0
     },
     "2026-11-13": {
-      "snapshots": 27,
+      "snapshots": 28,
       "late": 1,
       "missed": 0,
-      "changed": 4,
+      "changed": 5,
       "failed": 0
     }
   },
@@ -759,6 +759,11 @@
       "checked_at": "2026-11-13T12:02:21Z",
       "path": "history/2026/11/13/1202.json",
       "summary": "Claude: 1 incident(s) resolved"
+    },
+    {
+      "checked_at": "2026-11-13T13:31:41Z",
+      "path": "history/2026/11/13/1331.json",
+      "summary": "Claude: 1 new incident(s)"
     }
   ],
   "missed": [

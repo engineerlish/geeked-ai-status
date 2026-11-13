@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T13:01:50Z",
-  "scheduled_for": "2026-11-13T13:00:00Z",
+  "checked_at": "2026-11-13T13:31:41Z",
+  "scheduled_for": "2026-11-13T13:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43430109995",
+    "run_id": "43434399526",
     "late": false,
-    "late_seconds": 110,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -32,6 +32,15 @@
         "summary": "Partial System Outage",
         "incidents": [
           {
+            "id": "34wq7gxnxvvm",
+            "title": "Elevated errors on claude.ai, the Claude API, and Claude Code",
+            "status": "investigating",
+            "impact": "major",
+            "url": "https://stspg.io/264r547qtkky",
+            "started_at": "2026-11-13T13:09:50Z",
+            "updated_at": "2026-11-13T13:09:50Z"
+          },
+          {
             "id": "sqn3fg1l96dl",
             "title": "Elevated errors affecting the Microsoft 365 connector",
             "status": "identified",
@@ -45,6 +54,14 @@
           {
             "name": "claude.ai",
             "status": "major_outage"
+          },
+          {
+            "name": "Claude API (api.anthropic.com)",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
           },
           {
             "name": "Claude Cowork",
@@ -109,15 +126,20 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-13T12:32:57Z",
+    "any": true,
+    "summary": "Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-13T13:01:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "34wq7gxnxvvm",
+            "title": "Elevated errors on claude.ai, the Claude API, and Claude Code"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
