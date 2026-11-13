@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T21:31:42Z",
-  "scheduled_for": "2026-11-13T21:30:00Z",
+  "checked_at": "2026-11-13T22:01:59Z",
+  "scheduled_for": "2026-11-13T22:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43511464509",
+    "run_id": "43515825253",
     "late": false,
-    "late_seconds": 102,
+    "late_seconds": 119,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,29 +28,10 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "partial_outage",
-        "summary": "Partially Degraded Service",
-        "incidents": [
-          {
-            "id": "sqn3fg1l96dl",
-            "title": "Elevated errors affecting the Microsoft 365 connector",
-            "status": "monitoring",
-            "impact": "major",
-            "url": "https://stspg.io/m0rbx38nmy1c",
-            "started_at": "2026-11-12T17:52:44Z",
-            "updated_at": "2026-11-13T15:40:53Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Cowork",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "openai": {
@@ -123,16 +104,24 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-13T21:01:50Z",
+    "any": true,
+    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-13T21:31:42Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "partial_outage",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "sqn3fg1l96dl",
+            "title": "Elevated errors affecting the Microsoft 365 connector"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
