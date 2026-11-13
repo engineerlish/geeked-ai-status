@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T15:31:33Z",
-  "scheduled_for": "2026-11-13T15:30:00Z",
+  "checked_at": "2026-11-13T16:02:14Z",
+  "scheduled_for": "2026-11-13T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43453455420",
+    "run_id": "43458583273",
     "late": false,
-    "late_seconds": 93,
+    "late_seconds": 134,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,39 +29,22 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Minor Service Outage",
+        "summary": "Partially Degraded Service",
         "incidents": [
-          {
-            "id": "34wq7gxnxvvm",
-            "title": "Elevated errors on claude.ai, the Claude API, and Claude Code",
-            "status": "investigating",
-            "impact": "major",
-            "url": "https://stspg.io/264r547qtkky",
-            "started_at": "2026-11-13T13:09:50Z",
-            "updated_at": "2026-11-13T14:36:13Z"
-          },
           {
             "id": "sqn3fg1l96dl",
             "title": "Elevated errors affecting the Microsoft 365 connector",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "major",
             "url": "https://stspg.io/m0rbx38nmy1c",
             "started_at": "2026-11-12T17:52:44Z",
-            "updated_at": "2026-11-12T23:54:26Z"
+            "updated_at": "2026-11-13T15:40:53Z"
           }
         ],
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "partial_outage"
-          },
-          {
-            "name": "Claude API (api.anthropic.com)",
-            "status": "partial_outage"
-          },
-          {
-            "name": "Claude Code",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           },
           {
             "name": "Claude Cowork",
@@ -126,16 +109,21 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-13T15:01:57Z",
+    "any": true,
+    "summary": "Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-13T15:31:33Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "34wq7gxnxvvm",
+            "title": "Elevated errors on claude.ai, the Claude API, and Claude Code"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
