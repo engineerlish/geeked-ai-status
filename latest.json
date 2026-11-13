@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T22:01:59Z",
-  "scheduled_for": "2026-11-13T22:00:00Z",
+  "checked_at": "2026-11-13T22:31:47Z",
+  "scheduled_for": "2026-11-13T22:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43515825253",
+    "run_id": "43519976903",
     "late": false,
-    "late_seconds": 119,
+    "late_seconds": 107,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -104,24 +104,16 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-13T21:31:42Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-13T22:01:59Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "partial_outage",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "sqn3fg1l96dl",
-            "title": "Elevated errors affecting the Microsoft 365 connector"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
