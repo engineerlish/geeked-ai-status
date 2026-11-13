@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T14:01:53Z",
-  "scheduled_for": "2026-11-13T14:00:00Z",
+  "checked_at": "2026-11-13T14:31:10Z",
+  "scheduled_for": "2026-11-13T14:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43438876681",
+    "run_id": "43443446082",
     "late": false,
-    "late_seconds": 113,
+    "late_seconds": 70,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -38,7 +38,7 @@
             "impact": "major",
             "url": "https://stspg.io/264r547qtkky",
             "started_at": "2026-11-13T13:09:50Z",
-            "updated_at": "2026-11-13T13:52:05Z"
+            "updated_at": "2026-11-13T14:03:47Z"
           },
           {
             "id": "sqn3fg1l96dl",
@@ -128,7 +128,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-13T13:31:41Z",
+    "previous_checked_at": "2026-11-13T14:01:53Z",
     "providers": {
       "anthropic": {
         "models_added": [],
