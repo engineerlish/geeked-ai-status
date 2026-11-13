@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T09:31:31Z",
-  "scheduled_for": "2026-11-13T09:30:00Z",
+  "checked_at": "2026-11-13T10:01:53Z",
+  "scheduled_for": "2026-11-13T10:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43402017725",
+    "run_id": "43405938123",
     "late": false,
-    "late_seconds": 91,
+    "late_seconds": 113,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,8 +29,17 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Partially Degraded Service",
+        "summary": "Partial System Outage",
         "incidents": [
+          {
+            "id": "nn11wk485zfn",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "status": "investigating",
+            "impact": "major",
+            "url": "https://stspg.io/6kqyd0c5b1gr",
+            "started_at": "2026-11-13T09:58:58Z",
+            "updated_at": "2026-11-13T09:58:58Z"
+          },
           {
             "id": "sqn3fg1l96dl",
             "title": "Elevated errors affecting the Microsoft 365 connector",
@@ -44,7 +53,15 @@
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "degraded_performance"
+            "status": "major_outage"
+          },
+          {
+            "name": "Claude Console (platform.claude.com)",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
           },
           {
             "name": "Claude Cowork",
@@ -109,15 +126,20 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-13T09:02:12Z",
+    "any": true,
+    "summary": "Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-13T09:31:31Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "nn11wk485zfn",
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
