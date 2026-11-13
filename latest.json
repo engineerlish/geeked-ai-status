@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T14:31:10Z",
-  "scheduled_for": "2026-11-13T14:30:00Z",
+  "checked_at": "2026-11-13T15:01:57Z",
+  "scheduled_for": "2026-11-13T15:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43443446082",
+    "run_id": "43448436402",
     "late": false,
-    "late_seconds": 70,
+    "late_seconds": 117,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,7 +29,7 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Partial System Outage",
+        "summary": "Minor Service Outage",
         "incidents": [
           {
             "id": "34wq7gxnxvvm",
@@ -38,7 +38,7 @@
             "impact": "major",
             "url": "https://stspg.io/264r547qtkky",
             "started_at": "2026-11-13T13:09:50Z",
-            "updated_at": "2026-11-13T14:03:47Z"
+            "updated_at": "2026-11-13T14:36:13Z"
           },
           {
             "id": "sqn3fg1l96dl",
@@ -53,7 +53,7 @@
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "major_outage"
+            "status": "partial_outage"
           },
           {
             "name": "Claude API (api.anthropic.com)",
@@ -128,7 +128,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-13T14:01:53Z",
+    "previous_checked_at": "2026-11-13T14:31:10Z",
     "providers": {
       "anthropic": {
         "models_added": [],
