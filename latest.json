@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T03:31:43Z",
-  "scheduled_for": "2026-11-13T03:30:00Z",
+  "checked_at": "2026-11-13T04:02:11Z",
+  "scheduled_for": "2026-11-13T04:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43359549264",
+    "run_id": "43362831907",
     "late": false,
-    "late_seconds": 103,
+    "late_seconds": 131,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,6 +73,15 @@
         "summary": "Partial System Degradation",
         "incidents": [
           {
+            "id": "01M79GYA0GA772Y6D089AH5478",
+            "title": "Sites: Publishing failing",
+            "status": "identified",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M79GYA0GA772Y6D089AH5478",
+            "started_at": "2026-11-13T03:59:08Z",
+            "updated_at": "2026-11-13T03:59:08Z"
+          },
+          {
             "id": "01M78GAT3AK9P9W8Z230KHFVE8",
             "title": "Elevated errors affecting the Microsoft 365 connector",
             "status": "investigating",
@@ -109,9 +118,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-13T03:01:57Z",
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-13T03:31:43Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -124,7 +133,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M79GYA0GA772Y6D089AH5478",
+            "title": "Sites: Publishing failing"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
