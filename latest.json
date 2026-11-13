@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T11:01:48Z",
-  "scheduled_for": "2026-11-13T11:00:00Z",
+  "checked_at": "2026-11-13T11:31:35Z",
+  "scheduled_for": "2026-11-13T11:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43413700097",
+    "run_id": "43417748346",
     "late": false,
-    "late_seconds": 108,
+    "late_seconds": 95,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -34,11 +34,11 @@
           {
             "id": "nn11wk485zfn",
             "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-            "status": "investigating",
+            "status": "monitoring",
             "impact": "major",
             "url": "https://stspg.io/6kqyd0c5b1gr",
             "started_at": "2026-11-13T09:58:58Z",
-            "updated_at": "2026-11-13T09:58:58Z"
+            "updated_at": "2026-11-13T11:05:23Z"
           },
           {
             "id": "sqn3fg1l96dl",
@@ -54,14 +54,6 @@
           {
             "name": "claude.ai",
             "status": "major_outage"
-          },
-          {
-            "name": "Claude Console (platform.claude.com)",
-            "status": "partial_outage"
-          },
-          {
-            "name": "Claude Code",
-            "status": "partial_outage"
           },
           {
             "name": "Claude Cowork",
@@ -128,7 +120,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-13T10:31:46Z",
+    "previous_checked_at": "2026-11-13T11:01:48Z",
     "providers": {
       "anthropic": {
         "models_added": [],
