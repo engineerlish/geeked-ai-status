@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T07:31:16Z",
-  "scheduled_for": "2026-11-14T07:30:00Z",
+  "checked_at": "2026-11-14T08:01:51Z",
+  "scheduled_for": "2026-11-14T08:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43571469575",
+    "run_id": "43573830271",
     "late": false,
-    "late_seconds": 76,
+    "late_seconds": 111,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,7 +29,7 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Minor Service Outage",
+        "summary": "Partially Degraded Service",
         "incidents": [
           {
             "id": "ct4c2pwf2xpj",
@@ -44,7 +44,7 @@
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           }
         ]
       }
@@ -110,23 +110,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-14T07:01:46Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-14T07:31:16Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "ct4c2pwf2xpj",
-            "title": "Some users unable to sign up with Apple on the Claude iOS app"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
