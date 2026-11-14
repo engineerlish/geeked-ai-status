@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-14T03:02:01Z",
+  "scheduled_for": "2026-11-14T03:00:00Z",
+  "run": {
+    "trigger": "schedule",
+    "run_id": "43549463081",
+    "late": false,
+    "late_seconds": 121,
+    "missed_slots": [],
+    "missed_count": 0,
+    "collector_version": "1.0.0"
+  },
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "geeked_provider": "claude",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.anthropic.com/v1/models",
+        "error": "secret ANTHROPIC_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.claude.com/api/v2/summary.json",
+        "page_url": "https://status.claude.com",
+        "error": null,
+        "overall": "partial_outage",
+        "summary": "Minor Service Outage",
+        "incidents": [
+          {
+            "id": "qrpz8k79qm7x",
+            "title": "Elevated purchasing errors on claude.ai",
+            "status": "investigating",
+            "impact": "major",
+            "url": "https://stspg.io/qqf00d9r7pm4",
+            "started_at": "2026-11-14T02:54:33Z",
+            "updated_at": "2026-11-14T02:54:33Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "partial_outage"
+          }
+        ]
+      }
+    },
+    "openai": {
+      "id": "openai",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "geeked_provider": "openai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.openai.com/v1/models",
+        "error": "secret OPENAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.openai.com/api/v2/summary.json",
+        "page_url": "https://status.openai.com",
+        "error": null,
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M7ATRS6BMZ61E4JDHJGM79Y0",
+            "title": "Delayed Costs Data in the Compliance API",
+            "status": "monitoring",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M7ATRS6BMZ61E4JDHJGM79Y0",
+            "started_at": "2026-11-13T16:10:07Z",
+            "updated_at": "2026-11-13T18:56:45Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Compliance API",
+            "status": "degraded_performance"
+          }
+        ]
+      }
+    },
+    "xai": {
+      "id": "xai",
+      "name": "Grok",
+      "vendor": "xAI",
+      "geeked_provider": "xai",
+      "models": {
+        "state": "unavailable",
+        "source": "https://api.x.ai/v1/models",
+        "error": "secret XAI_API_KEY is not set",
+        "items": []
+      },
+      "status": {
+        "state": "ok",
+        "source": "https://status.x.ai/feed.xml",
+        "page_url": "https://status.x.ai",
+        "error": null,
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
+        "affected_components": []
+      }
+    }
+  },
+  "changes": {
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-14T02:31:15Z",
+    "providers": {
+      "anthropic": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "qrpz8k79qm7x",
+            "title": "Elevated purchasing errors on claude.ai"
+          }
+        ],
+        "incidents_resolved": []
+      },
+      "openai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      },
+      "xai": {
+        "models_added": [],
+        "models_removed": [],
+        "status_changed": null,
+        "incidents_started": [],
+        "incidents_resolved": []
+      }
+    }
+  }
+}

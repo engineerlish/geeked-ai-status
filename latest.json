@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T02:31:15Z",
-  "scheduled_for": "2026-11-14T02:30:00Z",
+  "checked_at": "2026-11-14T03:02:01Z",
+  "scheduled_for": "2026-11-14T03:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43546751045",
+    "run_id": "43549463081",
     "late": false,
-    "late_seconds": 75,
+    "late_seconds": 121,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,10 +28,25 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "partial_outage",
+        "summary": "Minor Service Outage",
+        "incidents": [
+          {
+            "id": "qrpz8k79qm7x",
+            "title": "Elevated purchasing errors on claude.ai",
+            "status": "investigating",
+            "impact": "major",
+            "url": "https://stspg.io/qqf00d9r7pm4",
+            "started_at": "2026-11-14T02:54:33Z",
+            "updated_at": "2026-11-14T02:54:33Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "partial_outage"
+          }
+        ]
       }
     },
     "openai": {
@@ -95,15 +110,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-14T02:02:16Z",
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-14T02:31:15Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "qrpz8k79qm7x",
+            "title": "Elevated purchasing errors on claude.ai"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
