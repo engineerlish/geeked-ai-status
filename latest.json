@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T05:31:41Z",
-  "scheduled_for": "2026-11-14T05:30:00Z",
+  "checked_at": "2026-11-14T06:02:25Z",
+  "scheduled_for": "2026-11-14T06:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43561950108",
+    "run_id": "43564361864",
     "late": false,
-    "late_seconds": 101,
+    "late_seconds": 145,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -95,9 +95,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-14T05:01:45Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-14T05:31:41Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -111,12 +111,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M7C40W0N5MZHNW0YM09QV962",
-            "title": "Elevated errors with ChatGPT billing and Ads billing"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
