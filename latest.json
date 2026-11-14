@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T03:02:01Z",
-  "scheduled_for": "2026-11-14T03:00:00Z",
+  "checked_at": "2026-11-14T03:31:33Z",
+  "scheduled_for": "2026-11-14T03:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43549463081",
+    "run_id": "43552068491",
     "late": false,
-    "late_seconds": 121,
+    "late_seconds": 93,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,22 +29,22 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Minor Service Outage",
+        "summary": "Partially Degraded Service",
         "incidents": [
           {
             "id": "qrpz8k79qm7x",
             "title": "Elevated purchasing errors on claude.ai",
-            "status": "investigating",
+            "status": "monitoring",
             "impact": "major",
             "url": "https://stspg.io/qqf00d9r7pm4",
             "started_at": "2026-11-14T02:54:33Z",
-            "updated_at": "2026-11-14T02:54:33Z"
+            "updated_at": "2026-11-14T03:09:15Z"
           }
         ],
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           }
         ]
       }
@@ -110,23 +110,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-14T02:31:15Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-14T03:02:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "qrpz8k79qm7x",
-            "title": "Elevated purchasing errors on claude.ai"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
