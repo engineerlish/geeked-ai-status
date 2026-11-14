@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T00:42:10Z",
-  "scheduled_for": "2026-11-14T00:30:00Z",
+  "checked_at": "2026-11-14T01:01:51Z",
+  "scheduled_for": "2026-11-14T01:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43535941724",
-    "late": true,
-    "late_seconds": 730,
+    "run_id": "43537986088",
+    "late": false,
+    "late_seconds": 111,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -95,9 +95,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-14T00:04:06Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-14T00:42:10Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -111,12 +111,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "01M78GAT3AK9P9W8Z230KHFVE8",
-            "title": "Elevated errors affecting the Microsoft 365 connector"
-          }
-        ]
+        "incidents_resolved": []
       },
       "xai": {
         "models_added": [],
