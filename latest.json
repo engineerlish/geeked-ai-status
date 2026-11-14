@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T04:02:09Z",
-  "scheduled_for": "2026-11-14T04:00:00Z",
+  "checked_at": "2026-11-14T04:31:30Z",
+  "scheduled_for": "2026-11-14T04:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43554598756",
+    "run_id": "43557068277",
     "late": false,
-    "late_seconds": 129,
+    "late_seconds": 90,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,25 +28,10 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "partial_outage",
-        "summary": "Partially Degraded Service",
-        "incidents": [
-          {
-            "id": "qrpz8k79qm7x",
-            "title": "Elevated purchasing errors on claude.ai",
-            "status": "monitoring",
-            "impact": "major",
-            "url": "https://stspg.io/qqf00d9r7pm4",
-            "started_at": "2026-11-14T02:54:33Z",
-            "updated_at": "2026-11-14T03:09:15Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "openai": {
@@ -68,6 +53,15 @@
         "overall": "degraded",
         "summary": "Partial System Degradation",
         "incidents": [
+          {
+            "id": "01M7C40W0N5MZHNW0YM09QV962",
+            "title": "Elevated errors with ChatGPT billing and Ads billing",
+            "status": "monitoring",
+            "impact": "none",
+            "url": "https://status.openai.com/incidents/01M7C40W0N5MZHNW0YM09QV962",
+            "started_at": "2026-11-14T04:11:04Z",
+            "updated_at": "2026-11-14T04:11:04Z"
+          },
           {
             "id": "01M7ATRS6BMZ61E4JDHJGM79Y0",
             "title": "Delayed Costs Data in the Compliance API",
@@ -110,22 +104,35 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-14T03:31:33Z",
+    "any": true,
+    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved; ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-14T04:02:09Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "partial_outage",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "qrpz8k79qm7x",
+            "title": "Elevated purchasing errors on claude.ai"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M7C40W0N5MZHNW0YM09QV962",
+            "title": "Elevated errors with ChatGPT billing and Ads billing"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
