@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T04:31:30Z",
-  "scheduled_for": "2026-11-14T04:30:00Z",
+  "checked_at": "2026-11-14T05:01:45Z",
+  "scheduled_for": "2026-11-14T05:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43557068277",
+    "run_id": "43559494091",
     "late": false,
-    "late_seconds": 90,
+    "late_seconds": 105,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -104,35 +104,22 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude operational (was partial outage); Claude: 1 incident(s) resolved; ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-14T04:02:09Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-14T04:31:30Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "partial_outage",
-          "to": "operational"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "qrpz8k79qm7x",
-            "title": "Elevated purchasing errors on claude.ai"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "01M7C40W0N5MZHNW0YM09QV962",
-            "title": "Elevated errors with ChatGPT billing and Ads billing"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
