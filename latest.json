@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T07:43:48Z",
-  "scheduled_for": "2026-11-16T07:30:00Z",
+  "checked_at": "2026-11-16T08:08:57Z",
+  "scheduled_for": "2026-11-16T08:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43825827243",
-    "late": true,
-    "late_seconds": 828,
+    "run_id": "43828915798",
+    "late": false,
+    "late_seconds": 537,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,8 +29,17 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Partially Degraded Service",
+        "summary": "Minor Service Outage",
         "incidents": [
+          {
+            "id": "r1b4f9bbnsx1",
+            "title": "Elevated errors for Claude Sonnet 5.5 and Claude Fable 5.2",
+            "status": "monitoring",
+            "impact": "major",
+            "url": "https://stspg.io/n18qjkd7dt4q",
+            "started_at": "2026-11-16T07:49:55Z",
+            "updated_at": "2026-11-16T08:02:25Z"
+          },
           {
             "id": "ct4c2pwf2xpj",
             "title": "Some users unable to sign up with Apple on the Claude iOS app",
@@ -44,7 +53,19 @@
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "degraded_performance"
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude API (api.anthropic.com)",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "partial_outage"
           }
         ]
       }
@@ -95,15 +116,20 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-16T07:07:11Z",
+    "any": true,
+    "summary": "Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-16T07:43:48Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "r1b4f9bbnsx1",
+            "title": "Elevated errors for Claude Sonnet 5.5 and Claude Fable 5.2"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
