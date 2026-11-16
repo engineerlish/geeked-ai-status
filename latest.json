@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T09:40:18Z",
-  "scheduled_for": "2026-11-16T09:30:00Z",
+  "checked_at": "2026-11-16T10:02:05Z",
+  "scheduled_for": "2026-11-16T10:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43841814695",
-    "late": true,
-    "late_seconds": 618,
+    "run_id": "43845105201",
+    "late": false,
+    "late_seconds": 125,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -95,21 +95,16 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-16T09:02:23Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-16T09:40:18Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "r1b4f9bbnsx1",
-            "title": "Elevated errors for Claude Sonnet 5.5 and Claude Fable 5.2"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
