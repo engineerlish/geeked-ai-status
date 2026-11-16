@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T15:38:17Z",
-  "scheduled_for": "2026-11-16T15:30:00Z",
+  "checked_at": "2026-11-16T16:02:10Z",
+  "scheduled_for": "2026-11-16T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43898479580",
+    "run_id": "43902962840",
     "late": false,
-    "late_seconds": 497,
+    "late_seconds": 130,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -104,20 +104,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-16T15:01:59Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-16T15:38:17Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [
-          {
-            "id": "b5cq662qf2wm",
-            "title": "Claude unable to join meetings"
-          }
-        ],
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
