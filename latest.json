@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T16:31:32Z",
-  "scheduled_for": "2026-11-16T16:30:00Z",
+  "checked_at": "2026-11-16T17:01:44Z",
+  "scheduled_for": "2026-11-16T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43908430779",
+    "run_id": "43913927657",
     "late": false,
-    "late_seconds": 92,
+    "late_seconds": 104,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,7 +29,7 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Minor Service Outage",
+        "summary": "Partially Degraded Service",
         "incidents": [
           {
             "id": "b5cq662qf2wm",
@@ -53,7 +53,7 @@
         "affected_components": [
           {
             "name": "claude.ai",
-            "status": "partial_outage"
+            "status": "degraded_performance"
           }
         ]
       }
@@ -106,7 +106,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-16T16:02:10Z",
+    "previous_checked_at": "2026-11-16T16:31:32Z",
     "providers": {
       "anthropic": {
         "models_added": [],
