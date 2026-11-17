@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T20:31:40Z",
-  "scheduled_for": "2026-11-17T20:30:00Z",
+  "checked_at": "2026-11-17T21:01:49Z",
+  "scheduled_for": "2026-11-17T21:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44170209111",
+    "run_id": "44175462507",
     "late": false,
-    "late_seconds": 100,
+    "late_seconds": 109,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -32,6 +32,15 @@
         "summary": "Partially Degraded Service",
         "incidents": [
           {
+            "id": "b5cq662qf2wm",
+            "title": "Claude unable to join meetings",
+            "status": "identified",
+            "impact": "major",
+            "url": "https://stspg.io/01qq3kzyyqzl",
+            "started_at": "2026-11-16T15:10:15Z",
+            "updated_at": "2026-11-17T20:47:29Z"
+          },
+          {
             "id": "1lglzf469c0z",
             "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
             "status": "identified",
@@ -39,15 +48,6 @@
             "url": "https://stspg.io/3tl6h35nnzwm",
             "started_at": "2026-11-17T18:55:53Z",
             "updated_at": "2026-11-17T18:56:06Z"
-          },
-          {
-            "id": "b5cq662qf2wm",
-            "title": "Claude unable to join meetings",
-            "status": "identified",
-            "impact": "major",
-            "url": "https://stspg.io/01qq3kzyyqzl",
-            "started_at": "2026-11-16T15:10:15Z",
-            "updated_at": "2026-11-17T02:02:57Z"
           }
         ],
         "affected_components": [
@@ -121,7 +121,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-17T20:01:51Z",
+    "previous_checked_at": "2026-11-17T20:31:40Z",
     "providers": {
       "anthropic": {
         "models_added": [],
