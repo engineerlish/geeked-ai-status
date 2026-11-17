@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T19:31:38Z",
-  "scheduled_for": "2026-11-17T19:30:00Z",
+  "checked_at": "2026-11-17T20:01:51Z",
+  "scheduled_for": "2026-11-17T20:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44159497691",
+    "run_id": "44164903114",
     "late": false,
-    "late_seconds": 98,
+    "late_seconds": 111,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -80,11 +80,11 @@
           {
             "id": "01M7N9VNR6X5SEC90M1YCDB36D",
             "title": "Costs API data is delayed",
-            "status": "investigating",
+            "status": "monitoring",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D",
             "started_at": "2026-11-17T17:46:15Z",
-            "updated_at": "2026-11-17T18:41:57Z"
+            "updated_at": "2026-11-17T19:53:49Z"
           }
         ],
         "affected_components": [
@@ -121,7 +121,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-17T19:01:47Z",
+    "previous_checked_at": "2026-11-17T19:31:38Z",
     "providers": {
       "anthropic": {
         "models_added": [],
