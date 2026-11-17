@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T22:01:55Z",
-  "scheduled_for": "2026-11-17T22:00:00Z",
+  "checked_at": "2026-11-17T22:31:36Z",
+  "scheduled_for": "2026-11-17T22:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44185894422",
+    "run_id": "44190889228",
     "late": false,
-    "late_seconds": 115,
+    "late_seconds": 96,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -110,21 +110,16 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-17T21:31:39Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-17T22:01:55Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "1lglzf469c0z",
-            "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
