@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T17:31:42Z",
-  "scheduled_for": "2026-11-17T17:30:00Z",
+  "checked_at": "2026-11-17T18:02:21Z",
+  "scheduled_for": "2026-11-17T18:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44137948577",
+    "run_id": "44143480150",
     "late": false,
-    "late_seconds": 102,
+    "late_seconds": 141,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -65,10 +65,25 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "degraded",
+        "summary": "Partial System Degradation",
+        "incidents": [
+          {
+            "id": "01M7N9VNR6X5SEC90M1YCDB36D",
+            "title": "Costs API data is delayed",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D",
+            "started_at": "2026-11-17T17:46:15Z",
+            "updated_at": "2026-11-17T17:46:15Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "Compliance API",
+            "status": "degraded_performance"
+          }
+        ]
       }
     },
     "xai": {
@@ -95,9 +110,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-17T17:01:56Z",
+    "any": true,
+    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-17T17:31:42Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -109,8 +124,16 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "01M7N9VNR6X5SEC90M1YCDB36D",
+            "title": "Costs API data is delayed"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
