@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T21:31:39Z",
-  "scheduled_for": "2026-11-17T21:30:00Z",
+  "checked_at": "2026-11-17T22:01:55Z",
+  "scheduled_for": "2026-11-17T22:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44180706374",
+    "run_id": "44185894422",
     "late": false,
-    "late_seconds": 99,
+    "late_seconds": 115,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -39,15 +39,6 @@
             "url": "https://stspg.io/01qq3kzyyqzl",
             "started_at": "2026-11-16T15:10:15Z",
             "updated_at": "2026-11-17T20:47:29Z"
-          },
-          {
-            "id": "1lglzf469c0z",
-            "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
-            "status": "identified",
-            "impact": "major",
-            "url": "https://stspg.io/3tl6h35nnzwm",
-            "started_at": "2026-11-17T18:55:53Z",
-            "updated_at": "2026-11-17T18:56:06Z"
           }
         ],
         "affected_components": [
@@ -119,16 +110,21 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-17T21:01:49Z",
+    "any": true,
+    "summary": "Claude: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-17T21:31:39Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "1lglzf469c0z",
+            "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app"
+          }
+        ]
       },
       "openai": {
         "models_added": [],
