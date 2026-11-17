@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T02:02:12Z",
-  "scheduled_for": "2026-11-17T02:00:00Z",
+  "checked_at": "2026-11-17T02:31:45Z",
+  "scheduled_for": "2026-11-17T02:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "43999985406",
+    "run_id": "44003639939",
     "late": false,
-    "late_seconds": 132,
+    "late_seconds": 105,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -34,11 +34,11 @@
           {
             "id": "b5cq662qf2wm",
             "title": "Claude unable to join meetings",
-            "status": "investigating",
+            "status": "identified",
             "impact": "major",
             "url": "https://stspg.io/01qq3kzyyqzl",
             "started_at": "2026-11-16T15:10:15Z",
-            "updated_at": "2026-11-16T18:10:10Z"
+            "updated_at": "2026-11-17T02:02:57Z"
           }
         ],
         "affected_components": [
@@ -97,7 +97,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-17T01:32:13Z",
+    "previous_checked_at": "2026-11-17T02:02:12Z",
     "providers": {
       "anthropic": {
         "models_added": [],
