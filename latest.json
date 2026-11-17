@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T18:02:21Z",
-  "scheduled_for": "2026-11-17T18:00:00Z",
+  "checked_at": "2026-11-17T18:31:33Z",
+  "scheduled_for": "2026-11-17T18:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44143480150",
+    "run_id": "44148766968",
     "late": false,
-    "late_seconds": 141,
+    "late_seconds": 93,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -110,9 +110,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-17T17:31:42Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-17T18:02:21Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -124,16 +124,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M7N9VNR6X5SEC90M1YCDB36D",
-            "title": "Costs API data is delayed"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
