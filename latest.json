@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-17T18:31:33Z",
-  "scheduled_for": "2026-11-17T18:30:00Z",
+  "checked_at": "2026-11-17T19:01:47Z",
+  "scheduled_for": "2026-11-17T19:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44148766968",
+    "run_id": "44154131784",
     "late": false,
-    "late_seconds": 93,
+    "late_seconds": 107,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -31,6 +31,15 @@
         "overall": "partial_outage",
         "summary": "Partially Degraded Service",
         "incidents": [
+          {
+            "id": "1lglzf469c0z",
+            "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
+            "status": "identified",
+            "impact": "major",
+            "url": "https://stspg.io/3tl6h35nnzwm",
+            "started_at": "2026-11-17T18:55:53Z",
+            "updated_at": "2026-11-17T18:56:06Z"
+          },
           {
             "id": "b5cq662qf2wm",
             "title": "Claude unable to join meetings",
@@ -75,7 +84,7 @@
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D",
             "started_at": "2026-11-17T17:46:15Z",
-            "updated_at": "2026-11-17T17:46:15Z"
+            "updated_at": "2026-11-17T18:41:57Z"
           }
         ],
         "affected_components": [
@@ -110,15 +119,20 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-17T18:02:21Z",
+    "any": true,
+    "summary": "Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-17T18:31:33Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "1lglzf469c0z",
+            "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
