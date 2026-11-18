@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T02:02:16Z",
-  "scheduled_for": "2026-11-18T02:00:00Z",
+  "checked_at": "2026-11-18T02:31:45Z",
+  "scheduled_for": "2026-11-18T02:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44220264004",
+    "run_id": "44223913522",
     "late": false,
-    "late_seconds": 136,
+    "late_seconds": 105,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -110,21 +110,16 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-18T01:31:35Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-18T02:02:16Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "6prv10gjdpz1",
-            "title": "Elevated errors affecting the Google Docs connector"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
