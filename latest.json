@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T01:01:50Z",
-  "scheduled_for": "2026-11-18T01:00:00Z",
+  "checked_at": "2026-11-18T01:31:35Z",
+  "scheduled_for": "2026-11-18T01:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44212591488",
+    "run_id": "44216457649",
     "late": false,
-    "late_seconds": 110,
+    "late_seconds": 95,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,17 +28,26 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "partial_outage",
+        "overall": "degraded",
         "summary": "Partially Degraded Service",
         "incidents": [
           {
             "id": "b5cq662qf2wm",
             "title": "Claude unable to join meetings",
             "status": "identified",
-            "impact": "major",
+            "impact": "minor",
             "url": "https://stspg.io/01qq3kzyyqzl",
             "started_at": "2026-11-16T15:10:15Z",
-            "updated_at": "2026-11-17T23:39:43Z"
+            "updated_at": "2026-11-18T01:29:51Z"
+          },
+          {
+            "id": "6prv10gjdpz1",
+            "title": "Elevated errors affecting the Google Docs connector",
+            "status": "investigating",
+            "impact": "minor",
+            "url": "https://stspg.io/qz7tfhb7sl68",
+            "started_at": "2026-11-18T01:13:15Z",
+            "updated_at": "2026-11-18T01:13:15Z"
           }
         ],
         "affected_components": [
@@ -110,15 +119,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-18T00:46:31Z",
+    "any": true,
+    "summary": "Claude degraded (was partial outage); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-18T01:01:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "partial_outage",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "6prv10gjdpz1",
+            "title": "Elevated errors affecting the Google Docs connector"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
