@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:01:46Z",
-  "scheduled_for": "2026-11-18T14:00:00Z",
+  "checked_at": "2026-11-18T14:30:52Z",
+  "scheduled_for": "2026-11-18T14:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44319782564",
+    "run_id": "44325053676",
     "late": false,
-    "late_seconds": 106,
+    "late_seconds": 52,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -69,15 +69,6 @@
         "summary": "Partial System Degradation",
         "incidents": [
           {
-            "id": "01M7Q99XRGP8T4DWJN8DSZXA1X",
-            "title": "Elevated conversation errors for Free and Go users",
-            "status": "identified",
-            "impact": "minor",
-            "url": "https://status.openai.com/incidents/01M7Q99XRGP8T4DWJN8DSZXA1X",
-            "started_at": "2026-11-18T12:15:02Z",
-            "updated_at": "2026-11-18T12:15:02Z"
-          },
-          {
             "id": "01M7N9VNR6X5SEC90M1YCDB36D",
             "title": "Costs API data is delayed",
             "status": "monitoring",
@@ -88,10 +79,6 @@
           }
         ],
         "affected_components": [
-          {
-            "name": "Conversations",
-            "status": "degraded_performance"
-          },
           {
             "name": "Compliance API",
             "status": "degraded_performance"
@@ -123,9 +110,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-18T13:31:34Z",
+    "any": true,
+    "summary": "ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-18T14:01:46Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -139,7 +126,12 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "01M7Q99XRGP8T4DWJN8DSZXA1X",
+            "title": "Elevated conversation errors for Free and Go users"
+          }
+        ]
       },
       "xai": {
         "models_added": [],
