@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T12:02:25Z",
-  "scheduled_for": "2026-11-18T12:00:00Z",
+  "checked_at": "2026-11-18T12:34:01Z",
+  "scheduled_for": "2026-11-18T12:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44300083042",
+    "run_id": "44305133352",
     "late": false,
-    "late_seconds": 145,
+    "late_seconds": 241,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -69,6 +69,15 @@
         "summary": "Partial System Degradation",
         "incidents": [
           {
+            "id": "01M7Q99XRGP8T4DWJN8DSZXA1X",
+            "title": "Elevated conversation errors for Free and Go users",
+            "status": "identified",
+            "impact": "minor",
+            "url": "https://status.openai.com/incidents/01M7Q99XRGP8T4DWJN8DSZXA1X",
+            "started_at": "2026-11-18T12:15:02Z",
+            "updated_at": "2026-11-18T12:15:02Z"
+          },
+          {
             "id": "01M7N9VNR6X5SEC90M1YCDB36D",
             "title": "Costs API data is delayed",
             "status": "monitoring",
@@ -79,6 +88,10 @@
           }
         ],
         "affected_components": [
+          {
+            "name": "Conversations",
+            "status": "degraded_performance"
+          },
           {
             "name": "Compliance API",
             "status": "degraded_performance"
@@ -110,9 +123,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-18T11:31:33Z",
+    "any": true,
+    "summary": "ChatGPT: 1 new incident(s)",
+    "previous_checked_at": "2026-11-18T12:02:25Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -125,7 +138,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "01M7Q99XRGP8T4DWJN8DSZXA1X",
+            "title": "Elevated conversation errors for Free and Go users"
+          }
+        ],
         "incidents_resolved": []
       },
       "xai": {
