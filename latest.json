@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T09:02:01Z",
-  "scheduled_for": "2026-11-19T09:00:00Z",
+  "checked_at": "2026-11-19T09:31:37Z",
+  "scheduled_for": "2026-11-19T09:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44492683832",
+    "run_id": "44497207338",
     "late": false,
-    "late_seconds": 121,
+    "late_seconds": 97,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,10 +28,37 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "operational",
-        "summary": "All Systems Operational",
-        "incidents": [],
-        "affected_components": []
+        "overall": "partial_outage",
+        "summary": "Minor Service Outage",
+        "incidents": [
+          {
+            "id": "c1kmrkmv5f3d",
+            "title": "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2",
+            "status": "monitoring",
+            "impact": "major",
+            "url": "https://stspg.io/nlb5fptv28h5",
+            "started_at": "2026-11-19T09:10:24Z",
+            "updated_at": "2026-11-19T09:22:50Z"
+          }
+        ],
+        "affected_components": [
+          {
+            "name": "claude.ai",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude API (api.anthropic.com)",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Code",
+            "status": "partial_outage"
+          },
+          {
+            "name": "Claude Cowork",
+            "status": "partial_outage"
+          }
+        ]
       }
     },
     "openai": {
@@ -80,15 +107,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-19T08:32:15Z",
+    "any": true,
+    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-19T09:02:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "c1kmrkmv5f3d",
+            "title": "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
