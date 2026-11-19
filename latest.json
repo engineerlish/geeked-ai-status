@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T16:31:53Z",
-  "scheduled_for": "2026-11-19T16:30:00Z",
+  "checked_at": "2026-11-19T17:01:56Z",
+  "scheduled_for": "2026-11-19T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44567073300",
+    "run_id": "44572673384",
     "late": false,
-    "late_seconds": 113,
+    "late_seconds": 116,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -50,29 +50,10 @@
         "source": "https://status.openai.com/api/v2/summary.json",
         "page_url": "https://status.openai.com",
         "error": null,
-        "overall": "partial_outage",
-        "summary": "Partial System Degradation",
-        "incidents": [
-          {
-            "id": "01M7T8MRF9SDBDNQ62Z6V156ZZ",
-            "title": "Elevated error rates for gpt-6 Luna API requests",
-            "status": "monitoring",
-            "impact": "major",
-            "url": "https://status.openai.com/incidents/01M7T8MRF9SDBDNQ62Z6V156ZZ",
-            "started_at": "2026-11-19T16:01:12Z",
-            "updated_at": "2026-11-19T16:21:41Z"
-          }
-        ],
-        "affected_components": [
-          {
-            "name": "Chat Completions",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Responses",
-            "status": "degraded_performance"
-          }
-        ]
+        "overall": "operational",
+        "summary": "All Systems Operational",
+        "incidents": [],
+        "affected_components": []
       }
     },
     "xai": {
@@ -109,9 +90,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-19T16:01:55Z",
+    "any": true,
+    "summary": "ChatGPT operational (was partial outage); ChatGPT: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-19T16:31:53Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -123,9 +104,17 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "partial_outage",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "01M7T8MRF9SDBDNQ62Z6V156ZZ",
+            "title": "Elevated error rates for gpt-6 Luna API requests"
+          }
+        ]
       },
       "xai": {
         "models_added": [],

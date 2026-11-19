@@ -1,7 +1,7 @@
 {
   "index_version": 1,
-  "updated_at": "2026-11-19T16:31:53Z",
-  "snapshots_total": 1652,
+  "updated_at": "2026-11-19T17:01:56Z",
+  "snapshots_total": 1653,
   "days": {
     "2026-10-15": {
       "snapshots": 5,
@@ -249,10 +249,10 @@
       "failed": 0
     },
     "2026-11-19": {
-      "snapshots": 34,
+      "snapshots": 35,
       "late": 1,
       "missed": 0,
-      "changed": 4,
+      "changed": 5,
       "failed": 0
     }
   },
@@ -931,6 +931,11 @@
       "checked_at": "2026-11-19T16:01:55Z",
       "path": "history/2026/11/19/1601.json",
       "summary": "ChatGPT partial outage (was operational); ChatGPT: 1 new incident(s); Grok degraded (was operational); Grok: 1 new incident(s)"
+    },
+    {
+      "checked_at": "2026-11-19T17:01:56Z",
+      "path": "history/2026/11/19/1701.json",
+      "summary": "ChatGPT operational (was partial outage); ChatGPT: 1 incident(s) resolved"
     }
   ],
   "missed": [
