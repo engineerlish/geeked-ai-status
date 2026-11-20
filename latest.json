@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T19:01:41Z",
-  "scheduled_for": "2026-11-20T19:00:00Z",
+  "checked_at": "2026-11-20T19:31:37Z",
+  "scheduled_for": "2026-11-20T19:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "44798268312",
+    "run_id": "44802925691",
     "late": false,
-    "late_seconds": 101,
+    "late_seconds": 97,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,8 +73,17 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "summary": "2 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_9bc5a5e59f3188cf",
+            "title": "[Grok Build and Cursor: Agent SDK] Degraded Performance Agent SDK",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/agent-sdk/ps_9bc5a5e59f3188cf",
+            "started_at": "2026-11-20T19:26:13Z",
+            "updated_at": "2026-11-20T19:26:13Z"
+          },
           {
             "id": "ps_c953d2fd3da8691b",
             "title": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -90,9 +99,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-20T18:32:11Z",
+    "any": true,
+    "summary": "Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-20T19:01:41Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -112,7 +121,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "ps_9bc5a5e59f3188cf",
+            "title": "[Grok Build and Cursor: Agent SDK] Degraded Performance Agent SDK"
+          }
+        ],
         "incidents_resolved": []
       }
     }
