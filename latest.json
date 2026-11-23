@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-23T10:01:58Z",
-  "scheduled_for": "2026-11-23T10:00:00Z",
+  "checked_at": "2026-11-23T10:31:28Z",
+  "scheduled_for": "2026-11-23T10:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45152348012",
+    "run_id": "45156860406",
     "late": false,
-    "late_seconds": 118,
+    "late_seconds": 88,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -29,36 +29,19 @@
         "page_url": "https://status.claude.com",
         "error": null,
         "overall": "partial_outage",
-        "summary": "Partially Degraded Service",
+        "summary": "All Systems Operational",
         "incidents": [
           {
             "id": "yzs0s90d8fm8",
             "title": "Elevated errors for multiple models",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "major",
             "url": "https://stspg.io/q2ptbwdjx31m",
             "started_at": "2026-11-23T09:49:22Z",
-            "updated_at": "2026-11-23T09:56:38Z"
+            "updated_at": "2026-11-23T10:07:23Z"
           }
         ],
-        "affected_components": [
-          {
-            "name": "claude.ai",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude API (api.anthropic.com)",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Code",
-            "status": "degraded_performance"
-          },
-          {
-            "name": "Claude Cowork",
-            "status": "degraded_performance"
-          }
-        ]
+        "affected_components": []
       }
     },
     "openai": {
@@ -117,23 +100,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude partial outage (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-23T09:33:16Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-23T10:01:58Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "partial_outage"
-        },
-        "incidents_started": [
-          {
-            "id": "yzs0s90d8fm8",
-            "title": "Elevated errors for multiple models"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
