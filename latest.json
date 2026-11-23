@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-23T03:02:01Z",
-  "scheduled_for": "2026-11-23T03:00:00Z",
+  "checked_at": "2026-11-23T03:33:48Z",
+  "scheduled_for": "2026-11-23T03:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45103532972",
+    "run_id": "45106702500",
     "late": false,
-    "late_seconds": 121,
+    "late_seconds": 228,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -73,8 +73,17 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "summary": "2 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_ce2b4247388345bd",
+            "title": "[Grok Build and Cursor: Desktop] Grok 4.5 Degraded",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/cursor-desktop/ps_ce2b4247388345bd",
+            "started_at": "2026-11-23T03:02:19Z",
+            "updated_at": "2026-11-23T03:02:19Z"
+          },
           {
             "id": "ps_c953d2fd3da8691b",
             "title": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -90,9 +99,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-23T02:33:49Z",
+    "any": true,
+    "summary": "Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-23T03:02:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -112,7 +121,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "ps_ce2b4247388345bd",
+            "title": "[Grok Build and Cursor: Desktop] Grok 4.5 Degraded"
+          }
+        ],
         "incidents_resolved": []
       }
     }
