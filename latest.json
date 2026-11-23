@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-23T04:01:53Z",
-  "scheduled_for": "2026-11-23T04:00:00Z",
+  "checked_at": "2026-11-23T04:33:53Z",
+  "scheduled_for": "2026-11-23T04:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45109372201",
+    "run_id": "45112596256",
     "late": false,
-    "late_seconds": 113,
+    "late_seconds": 233,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -90,9 +90,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-23T03:33:48Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-23T04:01:53Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -113,12 +113,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_ce2b4247388345bd",
-            "title": "[Grok Build and Cursor: Desktop] Grok 4.5 Degraded"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
