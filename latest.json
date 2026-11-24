@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-24T17:01:47Z",
-  "scheduled_for": "2026-11-24T17:00:00Z",
+  "checked_at": "2026-11-24T17:31:22Z",
+  "scheduled_for": "2026-11-24T17:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45443907899",
+    "run_id": "45449477416",
     "late": false,
-    "late_seconds": 107,
+    "late_seconds": 82,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -28,17 +28,26 @@
         "source": "https://status.claude.com/api/v2/summary.json",
         "page_url": "https://status.claude.com",
         "error": null,
-        "overall": "degraded",
+        "overall": "partial_outage",
         "summary": "Partially Degraded Service",
         "incidents": [
+          {
+            "id": "fbvlx4wx4zx5",
+            "title": "Elevated errors for Claude Haiku 5.5",
+            "status": "monitoring",
+            "impact": "major",
+            "url": "https://stspg.io/n7769lzz1dvy",
+            "started_at": "2026-11-24T17:19:31Z",
+            "updated_at": "2026-11-24T17:27:14Z"
+          },
           {
             "id": "3vbyqgnswwxq",
             "title": "Claude for Microsoft 365 add-in missing for some users",
             "status": "investigating",
-            "impact": "minor",
+            "impact": "major",
             "url": "https://stspg.io/ffdq2qfv8frk",
             "started_at": "2026-11-24T00:10:40Z",
-            "updated_at": "2026-11-24T05:05:21Z"
+            "updated_at": "2026-11-24T17:19:32Z"
           }
         ],
         "affected_components": [
@@ -105,15 +114,23 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-24T16:31:47Z",
+    "any": true,
+    "summary": "Claude partial outage (was degraded); Claude: 1 new incident(s)",
+    "previous_checked_at": "2026-11-24T17:01:47Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "degraded",
+          "to": "partial_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "fbvlx4wx4zx5",
+            "title": "Elevated errors for Claude Haiku 5.5"
+          }
+        ],
         "incidents_resolved": []
       },
       "openai": {
