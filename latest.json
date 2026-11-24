@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-24T18:01:50Z",
-  "scheduled_for": "2026-11-24T18:00:00Z",
+  "checked_at": "2026-11-24T18:31:29Z",
+  "scheduled_for": "2026-11-24T18:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45455001973",
+    "run_id": "45460423822",
     "late": false,
-    "late_seconds": 110,
+    "late_seconds": 89,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -105,21 +105,16 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-24T17:31:22Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-24T18:01:50Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "fbvlx4wx4zx5",
-            "title": "Elevated errors for Claude Haiku 5.5"
-          }
-        ]
+        "incidents_resolved": []
       },
       "openai": {
         "models_added": [],
