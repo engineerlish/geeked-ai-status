@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-24T00:41:56Z",
-  "scheduled_for": "2026-11-24T00:30:00Z",
+  "checked_at": "2026-11-24T01:02:02Z",
+  "scheduled_for": "2026-11-24T01:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45299252799",
-    "late": true,
-    "late_seconds": 716,
+    "run_id": "45301874021",
+    "late": false,
+    "late_seconds": 122,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -105,23 +105,15 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Claude degraded (was operational); Claude: 1 new incident(s)",
-    "previous_checked_at": "2026-11-24T00:04:03Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-24T00:41:56Z",
     "providers": {
       "anthropic": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "3vbyqgnswwxq",
-            "title": "Claude for Microsoft 365 add-in missing for some users"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "openai": {
