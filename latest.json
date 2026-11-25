@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T15:02:00Z",
-  "scheduled_for": "2026-11-25T15:00:00Z",
+  "checked_at": "2026-11-25T15:31:41Z",
+  "scheduled_for": "2026-11-25T15:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45640536217",
+    "run_id": "45646121090",
     "late": false,
-    "late_seconds": 120,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -124,9 +124,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-25T14:31:31Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-25T15:02:00Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -147,12 +147,7 @@
         "models_removed": [],
         "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_107ced4bd129ed66",
-            "title": "[Grok Bot] Degraded performance — Grok Bot inbound email"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
