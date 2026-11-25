@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T12:02:09Z",
-  "scheduled_for": "2026-11-25T12:00:00Z",
+  "checked_at": "2026-11-25T12:35:29Z",
+  "scheduled_for": "2026-11-25T12:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45609911610",
+    "run_id": "45615209107",
     "late": false,
-    "late_seconds": 129,
+    "late_seconds": 329,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -70,17 +70,21 @@
         "incidents": [
           {
             "id": "01M898HVZGXFV2XC4775CG9GF8",
-            "title": "ChatGPT is experiencing elevated conversation errors affecting Education, Team, Business, Pro, and Plus plans",
+            "title": "ChatGPT and Codex Cloud are experiencing elevated conversation errors",
             "status": "identified",
             "impact": "minor",
             "url": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8",
             "started_at": "2026-11-25T11:48:13Z",
-            "updated_at": "2026-11-25T11:56:25Z"
+            "updated_at": "2026-11-25T12:14:44Z"
           }
         ],
         "affected_components": [
           {
             "name": "Conversations",
+            "status": "degraded_performance"
+          },
+          {
+            "name": "ChatGPT Work",
             "status": "degraded_performance"
           }
         ]
@@ -120,9 +124,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "ChatGPT degraded (was operational); ChatGPT: 1 new incident(s)",
-    "previous_checked_at": "2026-11-25T11:31:27Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-25T12:02:09Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -134,16 +138,8 @@
       "openai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "01M898HVZGXFV2XC4775CG9GF8",
-            "title": "ChatGPT is experiencing elevated conversation errors affecting Education, Team, Business, Pro, and Plus plans"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       },
       "xai": {
