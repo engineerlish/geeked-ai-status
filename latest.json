@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T13:31:24Z",
-  "scheduled_for": "2026-11-25T13:30:00Z",
+  "checked_at": "2026-11-25T14:02:00Z",
+  "scheduled_for": "2026-11-25T14:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45624429893",
+    "run_id": "45629611616",
     "late": false,
-    "late_seconds": 84,
+    "late_seconds": 120,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -107,8 +107,17 @@
         "page_url": "https://status.x.ai",
         "error": null,
         "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "summary": "2 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_107ced4bd129ed66",
+            "title": "[Grok Bot] Degraded performance — Grok Bot inbound email",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_107ced4bd129ed66",
+            "started_at": "2026-11-25T13:57:41Z",
+            "updated_at": "2026-11-25T13:57:41Z"
+          },
           {
             "id": "ps_c953d2fd3da8691b",
             "title": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -124,9 +133,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-25T13:01:44Z",
+    "any": true,
+    "summary": "Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-25T13:31:24Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -146,7 +155,12 @@
         "models_added": [],
         "models_removed": [],
         "status_changed": null,
-        "incidents_started": [],
+        "incidents_started": [
+          {
+            "id": "ps_107ced4bd129ed66",
+            "title": "[Grok Bot] Degraded performance — Grok Bot inbound email"
+          }
+        ],
         "incidents_resolved": []
       }
     }
