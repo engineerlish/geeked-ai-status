@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T22:31:16Z",
-  "scheduled_for": "2026-11-25T22:30:00Z",
+  "checked_at": "2026-11-25T23:01:35Z",
+  "scheduled_for": "2026-11-25T23:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45713912088",
+    "run_id": "45718053289",
     "late": false,
-    "late_seconds": 76,
+    "late_seconds": 95,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -97,27 +97,17 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "1 active incident(s)",
-        "incidents": [
-          {
-            "id": "ps_c953d2fd3da8691b",
-            "title": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
-            "status": "active",
-            "impact": "minor",
-            "url": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b",
-            "started_at": "2026-11-19T16:01:13Z",
-            "updated_at": "2026-11-19T16:01:13Z"
-          }
-        ],
+        "overall": "operational",
+        "summary": "All systems operational",
+        "incidents": [],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-25T22:01:33Z",
+    "any": true,
+    "summary": "Grok operational (was degraded); Grok: 1 incident(s) resolved",
+    "previous_checked_at": "2026-11-25T22:31:16Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -136,9 +126,17 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
+        "status_changed": {
+          "from": "degraded",
+          "to": "operational"
+        },
         "incidents_started": [],
-        "incidents_resolved": []
+        "incidents_resolved": [
+          {
+            "id": "ps_c953d2fd3da8691b",
+            "title": "[Third-party Model Providers] Degraded Gemini 4 Carbon"
+          }
+        ]
       }
     }
   }
