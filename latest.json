@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-26T10:31:27Z",
-  "scheduled_for": "2026-11-26T10:30:00Z",
+  "checked_at": "2026-11-26T11:01:49Z",
+  "scheduled_for": "2026-11-26T11:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45802109533",
+    "run_id": "45806766143",
     "late": false,
-    "late_seconds": 87,
+    "late_seconds": 109,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -97,17 +97,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_9c3a169909dde9f2",
+            "title": "[Grok Bot] Degraded Performance Grok Bot",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/grok-bot/ps_9c3a169909dde9f2",
+            "started_at": "2026-11-26T10:44:55Z",
+            "updated_at": "2026-11-26T10:44:55Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-26T10:01:56Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-26T10:31:27Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -126,8 +136,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_9c3a169909dde9f2",
+            "title": "[Grok Bot] Degraded Performance Grok Bot"
+          }
+        ],
         "incidents_resolved": []
       }
     }
