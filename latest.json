@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T15:31:33Z",
-  "scheduled_for": "2026-11-27T15:30:00Z",
+  "checked_at": "2026-11-27T16:01:44Z",
+  "scheduled_for": "2026-11-27T16:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "46025663062",
+    "run_id": "46030038494",
     "late": false,
-    "late_seconds": 93,
+    "late_seconds": 104,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -87,9 +87,45 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "degraded",
-        "summary": "1 active incident(s)",
+        "overall": "major_outage",
+        "summary": "5 active incident(s)",
         "incidents": [
+          {
+            "id": "ps_502521fc26eb22b9",
+            "title": "[Grok Build and Cursor: Automations] Elevated errors affecting chat and agent requests",
+            "status": "active",
+            "impact": "critical",
+            "url": "https://status.x.ai/automations/ps_502521fc26eb22b9",
+            "started_at": "2026-11-27T15:57:55Z",
+            "updated_at": "2026-11-27T15:57:55Z"
+          },
+          {
+            "id": "ps_502521fc26eb22b9",
+            "title": "[Grok Build and Cursor: Cloud Agents] Elevated errors affecting chat and agent requests",
+            "status": "active",
+            "impact": "critical",
+            "url": "https://status.x.ai/cloud-agents/ps_502521fc26eb22b9",
+            "started_at": "2026-11-27T15:57:55Z",
+            "updated_at": "2026-11-27T15:57:55Z"
+          },
+          {
+            "id": "ps_502521fc26eb22b9",
+            "title": "[Grok Build and Cursor: Desktop] Elevated errors affecting chat and agent requests",
+            "status": "active",
+            "impact": "critical",
+            "url": "https://status.x.ai/cursor-desktop/ps_502521fc26eb22b9",
+            "started_at": "2026-11-27T15:57:55Z",
+            "updated_at": "2026-11-27T15:57:55Z"
+          },
+          {
+            "id": "ps_502521fc26eb22b9",
+            "title": "[Grok Bot: Desktop] Elevated errors affecting chat and agent requests",
+            "status": "active",
+            "impact": "critical",
+            "url": "https://status.x.ai/grok-bot-desktop/ps_502521fc26eb22b9",
+            "started_at": "2026-11-27T15:57:55Z",
+            "updated_at": "2026-11-27T15:57:55Z"
+          },
           {
             "id": "ps_665a368941fa8b5a",
             "title": "[Grok API: Chat (Global, api.x.ai)] API Document Search Outage",
@@ -105,9 +141,9 @@
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-27T15:01:45Z",
+    "any": true,
+    "summary": "Grok major outage (was degraded); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-27T15:31:33Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -126,8 +162,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "degraded",
+          "to": "major_outage"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_502521fc26eb22b9",
+            "title": "[Grok Bot: Desktop] Elevated errors affecting chat and agent requests"
+          }
+        ],
         "incidents_resolved": []
       }
     }
