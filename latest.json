@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T16:31:20Z",
-  "scheduled_for": "2026-11-27T16:30:00Z",
+  "checked_at": "2026-11-27T17:01:05Z",
+  "scheduled_for": "2026-11-27T17:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "46034302227",
+    "run_id": "46038386306",
     "late": false,
-    "late_seconds": 80,
+    "late_seconds": 65,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -105,9 +105,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was major outage); Grok: 1 incident(s) resolved",
-    "previous_checked_at": "2026-11-27T16:01:44Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-27T16:31:20Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -126,17 +126,9 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "major_outage",
-          "to": "degraded"
-        },
+        "status_changed": null,
         "incidents_started": [],
-        "incidents_resolved": [
-          {
-            "id": "ps_502521fc26eb22b9",
-            "title": "[Grok Bot: Desktop] Elevated errors affecting chat and agent requests"
-          }
-        ]
+        "incidents_resolved": []
       }
     }
   }
