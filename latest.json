@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T04:31:01Z",
-  "scheduled_for": "2026-11-27T04:30:00Z",
+  "checked_at": "2026-11-27T05:01:41Z",
+  "scheduled_for": "2026-11-27T05:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45940388581",
+    "run_id": "45943318416",
     "late": false,
-    "late_seconds": 61,
+    "late_seconds": 101,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -105,9 +105,9 @@
     }
   },
   "changes": {
-    "any": true,
-    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
-    "previous_checked_at": "2026-11-27T04:01:49Z",
+    "any": false,
+    "summary": "no changes",
+    "previous_checked_at": "2026-11-27T04:31:01Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -126,16 +126,8 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": {
-          "from": "operational",
-          "to": "degraded"
-        },
-        "incidents_started": [
-          {
-            "id": "ps_665a368941fa8b5a",
-            "title": "[Grok API: Chat (Global, api.x.ai)] API Document Search Outage"
-          }
-        ],
+        "status_changed": null,
+        "incidents_started": [],
         "incidents_resolved": []
       }
     }
