@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T19:31:29Z",
-  "scheduled_for": "2026-11-27T19:30:00Z",
+  "checked_at": "2026-11-27T20:01:36Z",
+  "scheduled_for": "2026-11-27T20:00:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "46057287795",
+    "run_id": "46060743498",
     "late": false,
-    "late_seconds": 89,
+    "late_seconds": 96,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -34,11 +34,11 @@
           {
             "id": "3vbyqgnswwxq",
             "title": "Claude for Microsoft 365 add-in missing for some users",
-            "status": "identified",
+            "status": "monitoring",
             "impact": "major",
             "url": "https://stspg.io/ffdq2qfv8frk",
             "started_at": "2026-11-24T00:10:40Z",
-            "updated_at": "2026-11-25T20:21:12Z"
+            "updated_at": "2026-11-27T19:48:22Z"
           }
         ],
         "affected_components": [
@@ -97,7 +97,7 @@
   "changes": {
     "any": false,
     "summary": "no changes",
-    "previous_checked_at": "2026-11-27T19:01:34Z",
+    "previous_checked_at": "2026-11-27T19:31:29Z",
     "providers": {
       "anthropic": {
         "models_added": [],
