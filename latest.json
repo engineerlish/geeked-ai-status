@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T04:01:49Z",
-  "scheduled_for": "2026-11-27T04:00:00Z",
+  "checked_at": "2026-11-27T04:31:01Z",
+  "scheduled_for": "2026-11-27T04:30:00Z",
   "run": {
     "trigger": "schedule",
-    "run_id": "45937521202",
+    "run_id": "45940388581",
     "late": false,
-    "late_seconds": 109,
+    "late_seconds": 61,
     "missed_slots": [],
     "missed_count": 0,
     "collector_version": "1.0.0"
@@ -87,17 +87,27 @@
         "source": "https://status.x.ai/feed.xml",
         "page_url": "https://status.x.ai",
         "error": null,
-        "overall": "operational",
-        "summary": "All systems operational",
-        "incidents": [],
+        "overall": "degraded",
+        "summary": "1 active incident(s)",
+        "incidents": [
+          {
+            "id": "ps_665a368941fa8b5a",
+            "title": "[Grok API: Chat (Global, api.x.ai)] API Document Search Outage",
+            "status": "active",
+            "impact": "minor",
+            "url": "https://status.x.ai/api-global/ps_665a368941fa8b5a",
+            "started_at": "2026-11-27T04:26:05Z",
+            "updated_at": "2026-11-27T04:26:05Z"
+          }
+        ],
         "affected_components": []
       }
     }
   },
   "changes": {
-    "any": false,
-    "summary": "no changes",
-    "previous_checked_at": "2026-11-27T03:31:48Z",
+    "any": true,
+    "summary": "Grok degraded (was operational); Grok: 1 new incident(s)",
+    "previous_checked_at": "2026-11-27T04:01:49Z",
     "providers": {
       "anthropic": {
         "models_added": [],
@@ -116,8 +126,16 @@
       "xai": {
         "models_added": [],
         "models_removed": [],
-        "status_changed": null,
-        "incidents_started": [],
+        "status_changed": {
+          "from": "operational",
+          "to": "degraded"
+        },
+        "incidents_started": [
+          {
+            "id": "ps_665a368941fa8b5a",
+            "title": "[Grok API: Chat (Global, api.x.ai)] API Document Search Outage"
+          }
+        ],
         "incidents_resolved": []
       }
     }
